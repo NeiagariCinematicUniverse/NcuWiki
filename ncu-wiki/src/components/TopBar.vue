@@ -1,0 +1,11 @@
+<template>
+    <v-btn
+        elevation="2"
+        icon
+        large
+        outlined
+        tile
+    >
+        <v-icon>mdi-heart</v-icon>
+    </v-btn>
+</template>
