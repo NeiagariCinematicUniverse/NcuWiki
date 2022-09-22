@@ -3,7 +3,8 @@ node_modules
 /dist
 
 # This is where the markdown files will be located.
-ressources
+main_pages
+side_panels
 
 # local env files
 .env.local

@@ -5,10 +5,27 @@
     >
         <v-row align="center" class="topBar">
             <v-col
-                cols="12"
-                md="7"
+                align="right"
+                cols="2"
+                md="1"
+                class="logo"
             >
-                <div id="title" class="text-left">
+                <v-img
+                    align="left"
+                    src="@/assets/logoncu.png"
+                    contain
+                    max-height="100"
+                    max-width="100"
+                ></v-img>
+            </v-col>
+
+            <v-col
+                align="left"
+                cols="10"
+                md="7"
+                class="title"
+            >
+                <div class="title">
                     <h1>
                         NcuWiki
                     </h1>
@@ -16,7 +33,7 @@
             </v-col>
 
             <v-col
-                cols="6"
+                cols="10"
                 md="3"
                 align="right"
                 class="searchColumn alignVertically"
@@ -33,12 +50,13 @@
                     dense
                     clearable
                     solo
+                    hide-details="true"
                 ></v-text-field>
             </v-col>
 
             <v-col
-                cols="4"
-                md="2"
+                cols="1"
+                md="1"
                 align="left"
                 class="themeColumn"
             >
@@ -67,11 +85,20 @@
 
 <style lang="sass">
     .topBar
+        .logo
+            padding-right: 0px
+            padding-left: 10px
+            
+        .title
+            padding-top: 5px
+
         .searchColumn
             padding-right: 0px
+            margin-top: 10px
 
             .expanding-search
                 transition: max-width 0.3s
+                margin-top: 0px !important
                 
                 .v-input__slot
                     cursor: pointer !important
@@ -86,4 +113,9 @@
         
         .themeColumn
             padding-left: 0px
+            margin-top: 10px
+
+            .v-btn
+                width: 47px
+                height: 40px
 </style>
