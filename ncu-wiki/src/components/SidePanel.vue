@@ -1,0 +1,49 @@
+<template>
+    <v-card
+        elevation="2"
+        outlined
+    >
+        <v-card-title>{{ title }}</v-card-title>
+        <v-card-text>
+            <div id="sidePanelContent">
+                <!-- Empty 'cause filled dynamically -->
+            </div>
+        </v-card-text>
+    </v-card>
+</template>
+
+<script>
+import { Remarkable } from 'remarkable';
+const md = new Remarkable();
+
+export default {
+    props: {
+        url: String,
+    },
+
+
+    data: () => ({
+        sidePanel: null,
+        title: String,
+    }),
+
+    methods: {
+        loadSidePanel: async function () {
+            let sidePanelMd = await import("raw-loader!@/assets/side_panels/" + this.url + ".md")
+                .catch(err => {
+                console.log(err +
+                    "\nAborted loading side panel");
+                document.getElementById("sidePanel").remove();
+                document.getElementById("content").removeAttribute("class");
+            });
+            this.sidePanel = md.render(sidePanelMd.default);
+            this.title = this.url.replace("_", " ");
+
+            document.getElementById("sidePanelContent").innerHTML = this.sidePanel;
+        }
+    },
+    mounted: function () {
+        this.loadSidePanel();
+    },
+}
+</script>

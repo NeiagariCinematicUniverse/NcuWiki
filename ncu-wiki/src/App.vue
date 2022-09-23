@@ -1,7 +1,6 @@
 <template>
   <v-app>
     <v-navigation-drawer
-        v-model="drawer"
         app
         permanent
         expand-on-hover
