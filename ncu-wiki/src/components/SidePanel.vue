@@ -36,6 +36,8 @@ export default {
                 document.getElementById("sidePanel").remove();
                 document.getElementById("content").removeAttribute("class");
             });
+            if (!sidePanelMd) return;
+            
             this.sidePanel = md.render(sidePanelMd.default);
             this.title = this.url.replace("_", " ");
 
