@@ -1,10 +1,28 @@
 <template>
-    <v-card outlined>
+    <v-card
+        outlined
+        :class="{'deployed': deployed}"
+    >
         <v-card-title>
-            <v-icon>mdi-format-list-numbered</v-icon>
-            Contents
+            <v-container class="contentsTitle">
+                <v-row>
+                    <v-col class="contentsTitle" align="left">
+                        <v-icon id="contentsIco">mdi-format-list-numbered</v-icon>        
+                        Contents
+                    </v-col>
+                    <v-col class="contentsTitle" align="right">
+                        <v-btn 
+                            id ="contentsDspl"
+                            icon
+                            @click="deployed = !deployed"
+                        >
+                            <v-icon>mdi-chevron-down</v-icon>
+                        </v-btn>
+                    </v-col>
+                </v-row>
+            </v-container>
         </v-card-title>
-        <v-divider></v-divider>
+        <v-divider id="contentsDivider"></v-divider>
         <v-card-text id="contentsList">
             <ul id="contentsListRoot" class="contentsList">
                 <li>
@@ -96,10 +114,35 @@
     </v-card>
 </template>
 
+<script>
+    export default {
+        data: () => ({
+            deployed: true
+        }),
+    }
+</script>
+
 <style lang="sass">
     #contentsTable
         margin-top: 30px
         margin-bottom: 30px
+        width: fit-content
+        height: 67px
+
+        &.deployed
+            height: fit-content
+
+            .contentsList
+                visibility: visible
+
+            #contentsDivider
+                visibility: visible
+
+            #contentsDspl
+                transform: rotate(180deg)
+
+    #contentsDivider
+        visibility: hidden
 
     .v-card__text
         padding-left: 5px
@@ -107,6 +150,7 @@
 
         .contentsList
             list-style-type: none
+            visibility: hidden
 
         #contentsListRoot
             padding-left: 0px !important
@@ -118,4 +162,10 @@
             font-weight: 400
             text-transform: none
             letter-spacing: 0.012em
+
+    #contentsIco
+        margin-right: 3px
+
+    .contentsTitle
+        padding: 5px
 </style>

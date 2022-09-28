@@ -132,7 +132,6 @@ export default {
         },
 
         generateContents: function() {
-            console.log(this.contents);
             if (this.contents.length == 0) {
                 document.getElementById("contentsTable").remove();
                 return;
