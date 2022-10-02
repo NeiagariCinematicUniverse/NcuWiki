@@ -1,5 +1,5 @@
 <template>
-    <div 
+    <v-card
         id="mainPage"
         align="left"
     >
@@ -24,7 +24,7 @@
         </v-container>
 
         <ContentsTable id="contentsTable"></ContentsTable>
-    </div>
+    </v-card>
 </template>
 
 <script>

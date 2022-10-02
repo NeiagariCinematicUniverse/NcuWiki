@@ -26,7 +26,7 @@
                 class="title"
             >
                 <div class="title">
-                    <h1>
+                    <h1 id="mainTitle">
                         NcuWiki
                     </h1>
                 </div>
@@ -44,7 +44,7 @@
                     v-model="search"
                     placeholder="Search"
                     prepend-inner-icon="mdi-magnify"
-                    class="expanding-search mt-1"
+                    class="expanding-search mt-1 topBarButton"
                     :class="{'closed': !deployed && !search}"
                     filled
                     dense
@@ -66,6 +66,8 @@
                     large
                     outlined
                     tile
+                    @click="$vuetify.theme.dark = !$vuetify.theme.dark"
+                    class="topBarButton"
                 >
                     <v-icon>mdi-theme-light-dark</v-icon>
                 </v-btn>
@@ -102,11 +104,8 @@
                 
                 .v-input__slot
                     cursor: pointer !important
-                    border-top-right-radius: 0px !important
-                    border-top-left-radius: 0px !important
-                    border-bottom-right-radius: 0px !important
-                    border-bottom-left-radius: 0px !important
-                    border: thin solid rgba(0, 0, 0, 0.54)
+                    border-radius: 0px !important
+                    box-shadow: unset !important
 
                 &.closed
                     max-width: 47px
@@ -117,5 +116,18 @@
 
             .v-btn
                 width: 47px
-                height: 40px
+                height: 42px
+
+    #mainTitle
+        color: white
+
+    .topBarButton
+        background-color: white
+        border-radius: 0px !important
+        border: thin solid rgba(0, 0, 0, 0.54)
+        box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%)
+
+        &.theme--dark
+            background-color: #1E1E1E
+            border: thin solid white
 </style>

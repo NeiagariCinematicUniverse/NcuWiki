@@ -6,7 +6,17 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    background-image: url('@/assets/BG1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.v-main {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+      );
 }
 
 #topBar {
@@ -16,7 +26,6 @@
 #mainPage {
     margin: 25px;
     border-radius: 4px;
-    border: thin solid rgba(0, 0, 0, 0.54);
 }
 
 #pageContent {

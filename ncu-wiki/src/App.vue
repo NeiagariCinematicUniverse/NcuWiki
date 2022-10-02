@@ -34,7 +34,39 @@ export default {
 },
 
   data: () => ({
-    currentPath: window.location.pathname.substring(1)
+    currentPath: window.location.pathname.substring(1),
+    darkTheme: null,
   }),
+
+  methods: {
+    keepSystemTheme: function() {
+      this.darkTheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+      if (this.darkTheme.matches) {
+        this.$vuetify.theme.dark = true;
+      } else {
+        this.$vuetify.theme.dark = false;
+      }
+      
+      this.darkTheme.addEventListener("change", e => {
+        if (e.matches) {
+          this.$vuetify.theme.dark = true;
+        } else {
+          this.$vuetify.theme.dark = false;
+        }
+      });
+    }
+  },
+  created: function() {
+    this.keepSystemTheme();
+  },
 };
 </script>
+
+<style lang="sass">
+  #app
+    color: #2c3e50
+
+    &.theme--dark
+      color: white
+</style>
