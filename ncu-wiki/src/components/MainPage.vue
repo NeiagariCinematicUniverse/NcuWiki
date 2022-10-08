@@ -63,6 +63,7 @@ export default {
             this.content = md.render(page.default);
             this.title = this.url.replace("_", " ");
             document.getElementById("content").innerHTML = this.content;
+            document.title = this.title + " - " + document.title;
         },
 
         identifyHeaders: function() {

@@ -3,11 +3,9 @@
         <v-list>
             <v-list-item class="px-2">
                 <v-list-item-avatar>
-                <v-img src="https://cdn.discordapp.com/attachments/485070483260440581/1025151505143181352/unknown.png"></v-img>
+                    <v-img src="https://cdn.discordapp.com/attachments/485070483260440581/1025151505143181352/unknown.png"></v-img>
                 </v-list-item-avatar>
-            </v-list-item>
 
-            <v-list-item link>
                 <v-list-item-content>
                     <v-list-item-title class="text-h6">
                         NcuWiki
@@ -104,4 +102,13 @@
     
     #infoText
         text-align: left
+
+    .v-navigation-drawer
+
+        &.theme--dark
+            background-color: #1e1e1e
+
+    .v-navigation-drawer--mini-variant
+        .v-navigation-drawer__border
+            visibility: hidden
 </style>
