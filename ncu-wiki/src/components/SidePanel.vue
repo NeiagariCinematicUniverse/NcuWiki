@@ -1,7 +1,9 @@
 <template>
     <v-card
+        id="sidePanel"
         elevation="2"
         outlined
+        tag="aside"
     >
         <v-card-title>{{ title }}</v-card-title>
         <v-card-text>
@@ -49,3 +51,11 @@ export default {
     },
 }
 </script>
+
+<style lang="sass">
+    #sidePanel
+        width: 300px
+        float: right
+        margin-right: 42px
+
+</style>

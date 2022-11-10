@@ -1,9 +1,8 @@
 <template>
     <v-navigation-drawer
         app
-        expand-on-hover
-        mini-variant
-        touchless
+        temporary
+        bottom
     >
         <MenuContent/>
         <template v-slot:append>

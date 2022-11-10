@@ -31,3 +31,23 @@
 #pageContent {
     padding: 30px;
 }
+
+.content-l1 {
+    padding-left: 0px;
+}
+
+.content-l2 {
+    padding-left: 16px;
+}
+
+.content-l3 {
+    padding-left: 32px;
+}
+
+.content-l4 {
+    padding-left: 48px;
+}
+
+.content-l5 {
+    padding-left: 64px;
+}

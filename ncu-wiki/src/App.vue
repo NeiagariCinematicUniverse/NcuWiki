@@ -1,13 +1,7 @@
 <template>
   <v-app>
-    <v-navigation-drawer
-        app
-        permanent
-        expand-on-hover
-        mini-variant
-    >
-      <LeftMenu/>
-    </v-navigation-drawer>
+    <LeftMenu/>
+    <MobileMenu/>
 
     <v-main>
       <TopBar/>
@@ -23,6 +17,7 @@ import '@/assets/styles/main.css';
 import TopBar from './components/TopBar.vue';
 import LeftMenu from './components/LeftMenu.vue';
 import MainPage from './components/MainPage.vue';
+import MobileMenu from './components/MobileMenu.vue';
 
 export default {
   name: 'App',
@@ -30,7 +25,8 @@ export default {
   components: {
     TopBar,
     LeftMenu,
-    MainPage
+    MainPage,
+    MobileMenu
 },
 
   data: () => ({

@@ -8,7 +8,7 @@
                 <v-row>
                     <v-col class="contentsTitle" align="left">
                         <v-icon id="contentsIco">mdi-format-list-numbered</v-icon>        
-                        Contents
+                        Sommaire
                     </v-col>
                     <v-col class="contentsTitle" align="right">
                         <v-btn 
@@ -25,100 +25,48 @@
         <v-divider id="contentsDivider"></v-divider>
         <v-card-text id="contentsList">
             <ul id="contentsListRoot" class="contentsList">
-                <li>
-                    <v-btn
-                        class="contentsListElem"
-                        text
-                        block
-                        href="#1"
-                    >
-                        1.  Apparence
-                    </v-btn>
+                <li v-for="content in this.contents" :key="content.id" :class="{
+                        'content-l1': content.level == 1,
+                        'content-l2': content.level == 2,
+                        'content-l3': content.level == 3,
+                        'content-l4': content.level == 4,
+                        'content-l5': content.level == 5,
+                }">
+                    <ContentsTableElementVue :text="content.label" :link="'#' + content.index"/>
                 </li>
-                <li>
-                    <v-btn
-                        class="contentsListElem"
-                        text
-                        block
-                        href="#2"
-                    >
-                        2.  Personnalité
-                    </v-btn>
-                </li>
-                <ul class="contentsList">
-                    <li>
-                        <v-btn
-                            class="contentsListElem"
-                            text
-                            block
-                            href="#2.1"
-                        >
-                            2.1.  Difficultés de communication
-                        </v-btn>
-                    </li>
-                    <li>
-                        <v-btn
-                            class="contentsListElem"
-                            text
-                            block
-                            href="#2.2"
-                        >
-                            2.2.  Intelligence cognitive & émotionnelle
-                        </v-btn>
-                    </li>
-                </ul>
-                <li>
-                    <v-btn
-                        class="contentsListElem"
-                        text
-                        block
-                        href="#3"
-                    >
-                        3.  Biographie
-                    </v-btn>
-                </li>
-                <ul class="contentsList">
-                    <li>
-                        <v-btn
-                            class="contentsListElem"
-                            text
-                            block
-                            href="#3.1"
-                        >
-                            3.1.  Naissance et enfance (~ 2005 à 2020)
-                        </v-btn>
-                    </li>
-                    <li>
-                        <v-btn
-                            class="contentsListElem"
-                            text
-                            block
-                            href="#3.2"
-                        >
-                            3.2.  Babel's Curse (2021)
-                        </v-btn>
-                    </li>
-                    <li>
-                        <v-btn
-                            class="contentsListElem"
-                            text
-                            block
-                            href="#3.3"
-                        >
-                            3.3.  Post-Tuerie (2021-2025)
-                        </v-btn>
-                    </li>
-                </ul>
             </ul>
         </v-card-text>
     </v-card>
 </template>
 
 <script>
+import ContentsTableElementVue from './ContentsTableElement.vue';
+
     export default {
+        props: {
+            contents: [],
+        },
+
         data: () => ({
-            deployed: true
+            deployed: true,
         }),
+
+        methods: {
+            moveContentsTable: function() {
+                let firstHeader = document.getElementById(this.contents[0].index);
+                let contentsTable = document.getElementById("contentsTable");
+
+                console.log(firstHeader);
+                console.log(contentsTable);
+                document.getElementById("content").insertBefore(contentsTable, firstHeader);
+            }
+        },
+
+        mounted: function() {
+            this.moveContentsTable();
+        },
+
+        components: { ContentsTableElementVue }
     }
 </script>
 
@@ -167,5 +115,6 @@
         margin-right: 3px
 
     .contentsTitle
+        min-width: fit-content
         padding: 5px
 </style>
