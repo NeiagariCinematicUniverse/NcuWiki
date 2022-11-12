@@ -56,8 +56,6 @@ import ContentsTableElementVue from './ContentsTableElement.vue';
                 let firstHeader = document.getElementById(this.contents[0].index);
                 let contentsTable = document.getElementById("contentsTable");
 
-                console.log(firstHeader);
-                console.log(contentsTable);
                 document.getElementById("content").insertBefore(contentsTable, firstHeader);
             }
         },
@@ -81,7 +79,7 @@ import ContentsTableElementVue from './ContentsTableElement.vue';
             height: fit-content
 
             .contentsList
-                visibility: visible
+                display: unset
 
             #contentsDivider
                 visibility: visible
@@ -98,7 +96,7 @@ import ContentsTableElementVue from './ContentsTableElement.vue';
 
         .contentsList
             list-style-type: none
-            visibility: hidden
+            display: none
 
         #contentsListRoot
             padding-left: 0px !important

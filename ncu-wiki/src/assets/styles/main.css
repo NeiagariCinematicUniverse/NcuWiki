@@ -51,3 +51,7 @@
 .content-l5 {
     padding-left: 64px;
 }
+
+summary {
+    cursor: pointer;
+}
