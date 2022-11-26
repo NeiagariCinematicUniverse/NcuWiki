@@ -199,6 +199,7 @@ export default {
             this.identifyHeaders();
             this.hasHeaders = (this.contents.length > 0);
             this.addSpoilers("!");
+            
         }
     },
 
