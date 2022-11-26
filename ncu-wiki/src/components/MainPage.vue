@@ -177,7 +177,7 @@ export default {
                     let spoiler = document.createElement("details");
                     let summary = document.createElement("summary");
 
-                    summary.innerText = "PLACEHOLDER ❤️";
+                    summary.innerText = "Cette section contient du spoil. Cliquez à vos risques et périls.";
                     spoiler.innerHTML = children[i].innerHTML;
                     spoiler.innerText = spoiler.innerText.substring(2);
                     spoiler.insertBefore(summary, spoiler.firstChild);
