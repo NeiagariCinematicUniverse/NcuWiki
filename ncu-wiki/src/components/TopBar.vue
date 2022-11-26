@@ -51,6 +51,8 @@
                     clearable
                     solo
                     hide-details="true"
+                    @keypress="setSearchValue"
+                    @input="emptiedValue"
                 ></v-text-field>
             </v-col>
 
@@ -82,6 +84,19 @@
             search: null,
             deployed: false
         }),
+        methods: {
+            setSearchValue: function(event) {
+                if (event.key == "Enter") {
+                    this.$emit("validateSearch", this.search);
+                }
+            },
+            emptiedValue: function() {
+                if (!this.search) {
+                    this.search = "";
+                    this.$emit("validateSearch", this.search);
+                }
+            }
+        }
     }
 </script>
 

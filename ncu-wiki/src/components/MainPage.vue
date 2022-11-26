@@ -3,9 +3,10 @@
         id="mainPage"
         align="left"
     >
-        <h1 id="pageTitle">{{ title }}</h1>
-        <SidePanel :url="this.url"></SidePanel>
-        <div id="content">
+        <IndexPage id="index" v-if="this.isIndex" :search="this.search"></IndexPage>
+        <h1 id="pageTitle" v-if="!this.isIndex">{{ title }}</h1>
+        <SidePanel :url="this.url" v-if="!this.isIndex"></SidePanel>
+        <div id="content" v-if="!this.isIndex">
             {{ content }}
         </div>
 
@@ -29,7 +30,7 @@
             </v-row>
         </v-container -->
 
-        <ContentsTable id="contentsTable" v-if="this.hasHeaders" :contents="this.contents"></ContentsTable>
+        <ContentsTable id="contentsTable" v-if="this.hasHeaders && !this.isIndex" :contents="this.contents"></ContentsTable>
     </v-card>
 </template>
 
@@ -37,19 +38,20 @@
 import { Remarkable } from 'remarkable';
 import SidePanel from './SidePanel.vue';
 import ContentsTable from './ContentsTable.vue';
-// import { h } from 'vue';
-// import { render } from '@vue/runtime-dom';
+import IndexPage from './IndexPage.vue';
 const md = new Remarkable();
 
 export default {
     props: {
         url: String,
+        search: String,
     },
     data: () => ({
         content: null,
         title: String,
         contents: [],
         hasHeaders: false,
+        isIndex: false,
     }),
     methods: {
         loadIndex: async function () {
@@ -61,6 +63,9 @@ export default {
         },
 
         loadContent: async function () {
+            this.isIndex = (this.url === "index");
+            if (this.isIndex) return;
+
             let page = await import("raw-loader!@/assets/main_pages/" + this.url + ".md")
                 .catch(err => {
                 console.log(err +
@@ -190,14 +195,14 @@ export default {
 
     beforeMount: async function () {
         await this.loadContent();
-        this.identifyHeaders();
-        this.hasHeaders = (this.contents.length > 0);
-        this.addSpoilers("!");
-        //this.generateContents();
-        //render();
+        if (!this.isIndex) {
+            this.identifyHeaders();
+            this.hasHeaders = (this.contents.length > 0);
+            this.addSpoilers("!");
+        }
     },
 
-    components: { SidePanel, ContentsTable }
+    components: { SidePanel, ContentsTable, IndexPage, }
 }
 </script>
 
@@ -208,6 +213,11 @@ export default {
         padding-bottom: 30px
 
     #pageTitle
+        padding-left: 30px
+        padding-bottom: 18px
+        padding-top: 18px
+
+    #index
         padding-left: 30px
         padding-bottom: 18px
         padding-top: 18px

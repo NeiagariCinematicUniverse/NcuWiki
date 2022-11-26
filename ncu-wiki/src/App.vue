@@ -4,9 +4,11 @@
     <MobileMenu/>
 
     <v-main>
-      <TopBar/>
+      <TopBar v-on:validateSearch="pushSearch"/>
       <MainPage
         :url="currentPath"
+        :key="this.search"
+        :search="this.search"
       ></MainPage>
     </v-main>
   </v-app>
@@ -32,6 +34,7 @@ export default {
   data: () => ({
     currentPath: window.location.pathname.substring(1),
     darkTheme: null,
+    search: null,
   }),
 
   methods: {
@@ -51,7 +54,13 @@ export default {
           this.$vuetify.theme.dark = false;
         }
       });
-    }
+    },
+
+    pushSearch: function(search) {
+      this.search = search;
+      this.currentPath = "index";
+      
+    },
   },
   created: function() {
     this.keepSystemTheme();
