@@ -61,19 +61,21 @@ export default {
 
     methods: {
         loadSidePanel: async function () {
-            let sidePanelMd = await import("raw-loader!@/assets/side_panels/" + this.url + ".md")
-                .catch(err => {
-                console.log(err +
+            let requestResult = await fetch("http://127.0.0.1:3000/api/side/" + this.url);
+            if (requestResult.status != 200) {
+                console.log("Code " + requestResult.status +
                     "\nAborted loading side panel");
                 document.getElementById("sidePanel").remove();
                 document.getElementById("content").removeAttribute("class");
-            });
-            if (!sidePanelMd) return;
+                return;
+            }
 
-            let mdPics = sidePanelMd.default.split("[FEUILLE_VOLANTE]: FinDesPhotos")[0];
+            let sidePanelMd = (await requestResult.json()).markdown;
+
+            let mdPics = sidePanelMd.split("[FEUILLE_VOLANTE]: FinDesPhotos")[0];
             this.loadTabs(mdPics);
             
-            this.sidePanel = md.render(sidePanelMd.default);
+            this.sidePanel = md.render(sidePanelMd);
             this.title = this.url.replace("_", " ");
 
             document.getElementById("sidePanelContent").innerHTML = this.sidePanel;

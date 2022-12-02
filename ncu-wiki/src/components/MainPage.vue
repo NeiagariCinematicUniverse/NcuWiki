@@ -4,11 +4,10 @@
         align="left"
     >
         <IndexPage id="index" v-if="this.isIndex" :search="this.search"></IndexPage>
-        <h1 id="pageTitle" v-if="!this.isIndex">{{ title }}</h1>
+        <HomePage id="home" v-if="this.isHome"></HomePage>
+        <h1 id="pageTitle" v-if="(!this.isIndex && !this.isHome)">{{ title }}</h1>
         <SidePanel :url="this.url" v-if="!this.isIndex"></SidePanel>
-        <div id="content" v-if="!this.isIndex">
-            {{ content }}
-        </div>
+        <div id="content" v-if="!this.isIndex"></div>
 
         <!-- v-container id="pageContent">
             <v-row id="title">
@@ -39,6 +38,7 @@ import { Remarkable } from 'remarkable';
 import SidePanel from './SidePanel.vue';
 import ContentsTable from './ContentsTable.vue';
 import IndexPage from './IndexPage.vue';
+import HomePage from './HomePage.vue';
 const md = new Remarkable();
 
 export default {
@@ -52,29 +52,23 @@ export default {
         contents: [],
         hasHeaders: false,
         isIndex: false,
+        isHome: false,
     }),
     methods: {
-        loadIndex: async function () {
-            let page = await import("raw-loader!@/assets/main_pages/home.md");
-            this.content = await md.render(page.default);
-            this.title = "Bienvenue sur le wiki du Neiagari Cinematic Universe !";
-
-            document.getElementById("content").innerHTML = this.content;
-        },
-
         loadContent: async function () {
             this.isIndex = (this.url === "index");
             if (this.isIndex) return;
 
-            let page = await import("raw-loader!@/assets/main_pages/" + this.url + ".md")
-                .catch(err => {
-                console.log(err +
+            let requestResult = await fetch("http://127.0.0.1:3000/api/page/" + this.url);
+            if (requestResult.status != 200) {
+                console.log("Code " + requestResult.status +
                     "\nLoaded home instead");
-                this.loadIndex();
-            });
-            if (!page) return;
+                this.isHome = true;
+                return;
+            }
+            let page = (await requestResult.json()).markdown;
 
-            this.content = md.render(page.default);
+            this.content = md.render(page);
             this.title = this.url.replace("_", " ");
             document.getElementById("content").innerHTML = this.content;
             document.title = this.title + " - " + document.title;
@@ -203,7 +197,7 @@ export default {
         }
     },
 
-    components: { SidePanel, ContentsTable, IndexPage, }
+    components: { SidePanel, ContentsTable, IndexPage, HomePage, }
 }
 </script>
 
@@ -219,6 +213,11 @@ export default {
         padding-top: 18px
 
     #index
+        padding-left: 30px
+        padding-bottom: 18px
+        padding-top: 18px
+
+    #home
         padding-left: 30px
         padding-bottom: 18px
         padding-top: 18px
