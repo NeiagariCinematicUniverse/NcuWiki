@@ -32,7 +32,7 @@ export default {
 },
 
   data: () => ({
-    currentPath: window.location.pathname.substring(1),
+    currentPath: window.location.search.substring(1),
     darkTheme: null,
     search: null,
   }),

@@ -24,15 +24,15 @@ export default {
     }),
     methods: {
         loadPages: async function() {
-            this.pages = await (await fetch("http://127.0.0.1:3000/api/list")).json();
+            this.pages = await (await fetch("https://176.31.151.46:3000/api/list")).json();
             // [
             //     {
             //         name: "Jaako",
-            //         url: "/Jaako"
+            //         url: "?Jaako"
             //     },
             //     {
             //         name: "Natat",
-            //         url: "/Natat"
+            //         url: "?Natat"
             //     },
             // ];
 

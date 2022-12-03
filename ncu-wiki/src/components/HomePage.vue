@@ -8,7 +8,7 @@
 
         <p>
             Vous pouvez retrouver l'index qui regroupe tous les articles du wiki en suivant
-            <a href="/index">ce lien</a>.
+            <a href="?index">ce lien</a>.
         </p>
     </div>
 </template>

@@ -61,7 +61,7 @@ export default {
 
     methods: {
         loadSidePanel: async function () {
-            let requestResult = await fetch("http://127.0.0.1:3000/api/side/" + this.url);
+            let requestResult = await fetch("https://176.31.151.46:3000/api/side/" + this.url);
             if (requestResult.status != 200) {
                 console.log("Code " + requestResult.status +
                     "\nAborted loading side panel");

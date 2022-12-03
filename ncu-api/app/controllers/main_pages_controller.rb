@@ -4,7 +4,7 @@ class MainPagesController < ApplicationController
     @pageList = Array.new(0)
 
     for page in mainPages do
-      page_url = page[12..-4]
+      page_url = "?" + page[13..-4]
       page_name = page[13..-4]
       
       if page_name.include?("_")
