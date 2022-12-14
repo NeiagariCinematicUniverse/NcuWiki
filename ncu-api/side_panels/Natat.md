@@ -1,8 +1,8 @@
 [Design]: https://cdn.discordapp.com/attachments/1046041145756614686/1046041313558147152/Design.png
 [FEUILLE_VOLANTE]: FinDesPhotos
 
-[2026]: /2026
-[SS]: /Sacrement_Sepulcral
+[2026]: ?2026
+[SS]: ?Sacrement_Sepulcral
 
 ### Informations générales
 #### Taille

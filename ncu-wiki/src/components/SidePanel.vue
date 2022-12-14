@@ -5,7 +5,7 @@
         outlined
         tag="aside"
     >
-        <v-card-title>{{ title }}</v-card-title>
+        <v-card-title id="SidePanelTitle">{{ title }}</v-card-title>
         <v-tabs center-active centered show-arrows v-model="currentTab">
             <v-tab v-for="pic in this.pics" :key="pic.name">{{ pic.name }}</v-tab>
         </v-tabs>

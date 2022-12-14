@@ -39,7 +39,7 @@ Natat Santana est un personnage de la [Tuerie][tuerie] de [2026][2026], [Danganr
 ## Apparence
 ### Apparence générale
 Natat se présente comme une femme en léger surpoids s'habillant simplement, même dans l'environnement froid de la Cathédrale. Lors de sa première rencontre avec [Ichiko Naegi][ichiko], elle porte un simple débardeur rose, une veste magenta clair nouée autour de la ceinture, un pantalon gris et des bottes assorties à la veste. Si elle ne se permet que peu de bijoux, on peut noter la présence de boucles d'oreilles et de pins divers attachés à son haut. 
-Ses cheveux noirs sont tressés et piquetés d'une petite fleur
+Ses cheveux noirs sont tressés et piquetés d'une petite fleur [Pas fini wesh]
 
 ### Cicatrices
 //TODO

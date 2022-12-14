@@ -2,11 +2,12 @@
 [Avec Mika]: https://media.discordapp.net/attachments/1046024931139407902/1046028178214354995/unknown.png
 [Portrait]: https://cdn.discordapp.com/attachments/1046024931139407902/1046025687103983656/Portrait.jpg
 [FEUILLE_VOLANTE]: FinDesPhotos
-[2022]: /2022
-[2026]: /2026
-[SS]: /Sacrement_Sepulcral
-[BC]: /Babel's_Curse
-[Mika]: /Mika_Callaghan
+
+[2022]: ?2022
+[2026]: ?2026
+[SS]: ?Sacrement_Sepulcral
+[BC]: ?Babel's_Curse
+[Mika]: ?Mika_Callaghan
 
 ### Informations générales
 #### Taille
