@@ -1,34 +1,34 @@
-[tuerie]: /Tuerie
-[2020]: /2020
-[2021]: /2021
-[2022]: /2022
-[2025]: /2025
-[2026]: /2026
-[SS]: /Sacrement_Sepulcral
-[BC]: /Babel's_Curse
-[Mika]: /Mika_Callaghan
-[inquisiteur]: /Monoaku
-[monokuma]: /Monokuma
-[RL]: /Regis_Legatum
-[jun]: /Jun_Kyoshi
+[tuerie]: ?Tuerie
+[2020]: ?2020
+[2021]: ?2021
+[2022]: ?2022
+[2025]: ?2025
+[2026]: ?2026
+[SS]: ?Sacrement_Sepulcral
+[BC]: ?Babel's_Curse
+[Mika]: ?Mika_Callaghan
+[inquisiteur]: ?Monoaku
+[monokuma]: ?Monokuma
+[RL]: ?Regis_Legatum
+[jun]: ?Jun_Kyoshi
 
-[teodora]: /Teodora_Kasjasdottir
-[edel]: /Edel_Gunarsson
-[pontife]: /Ultime_Pontife
-[ichiko]: /Ichiko_Naegi
-[konrad]: /Konrad_Mec
-[aigjarn]: /Aigjarn_Oïrat
-[toshiki]: /Toshiki_Kojima
-[shailey]: /Shailey_Carson
-[sabbatius]: /Sabbatius_Cerularios
-[serbaz]: /Serbaz_Helkewt
-[cyrus]: /Cyrus_Rahmani
-[kendra]: /Kendra_Sykes
-[evelyn]: /Ultime_Prince
-[jaako]: /Jaako
-[septima]: /Septima_Octavia
-[theoris]: /Theoris_Waleed
-[rachel]: /Rachel
+[teodora]: ?Teodora_Kasjasdottir
+[edel]: ?Edel_Gunarsson
+[pontife]: ?Ultime_Pontife
+[ichiko]: ?Ichiko_Naegi
+[konrad]: ?Konrad_Mec
+[aigjarn]: ?Aigjarn_Oïrat
+[toshiki]: ?Toshiki_Kojima
+[shailey]: ?Shailey_Carson
+[sabbatius]: ?Sabbatius_Cerularios
+[serbaz]: ?Serbaz_Helkewt
+[cyrus]: ?Cyrus_Rahmani
+[kendra]: ?Kendra_Sykes
+[evelyn]: ?Ultime_Prince
+[jaako]: ?Jaako
+[septima]: ?Septima_Octavia
+[theoris]: ?Theoris_Waleed
+[rachel]: ?Rachel
 
 
 > *"Je n'ai jamais, au grand jamais, croisé quelqu'un qui méritait d'être maltraité"*  
@@ -37,10 +37,11 @@
 Natat Santana est un personnage de la [Tuerie][tuerie] de [2026][2026], [Danganronpa : Sacrement Sépulcral][SS]. Elle est une étudiante de la onzième promotion de Hope's Peak Academy, connu sous le titre d'Ultime Nutritionniste.
 
 ## Apparence
-### Sous-Partie 1
-//TODO
+### Apparence générale
+Natat se présente comme une femme en léger surpoids s'habillant simplement, même dans l'environnement froid de la Cathédrale. Lors de sa première rencontre avec [Ichiko Naegi][ichiko], elle porte un simple débardeur rose, une veste magenta clair nouée autour de la ceinture, un pantalon gris et des bottes assorties à la veste. Si elle ne se permet que peu de bijoux, on peut noter la présence de boucles d'oreilles et de pins divers attachés à son haut. 
+Ses cheveux noirs sont tressés et piquetés d'une petite fleur
 
-### Sous-partie 2
+### Cicatrices
 //TODO
 
 ## Personnalité
@@ -75,7 +76,7 @@ A 16 ans, elle est admise à l'Université Jean Piaget d'Angola, et déménage d
 //TODO
 
 #### Chapitre 2
->! Suivant les dernières volontés de la Nutritionniste, les autres participants de la Tuerie se décident à former des groupes de cuisine afin de garder un oeil sur tout le monde ainsi que pour créer une activité de groupe. Durant les Chapitres suivants, ces groupes de cuisine seront essentiels dans la recherche des mobiles et pour trouver les coupables. Ainsi, si la Nutritionniste n'a pas eu un grand impact de son vivant, on peut lui econnaître une grande utilité post-mortem.
+>! Suivant les dernières volontés de la Nutritionniste, les autres participants de la Tuerie se décident à former des groupes de cuisine afin de garder un oeil sur tout le monde ainsi que pour créer une activité de groupe. Durant les Chapitres suivants, ces groupes de cuisine seront essentiels dans la recherche des mobiles et pour trouver les coupables. Ainsi, si la Nutritionniste n'a pas eu un grand impact de son vivant, on peut lui reconnaître une grande utilité post-mortem.
 
 #### Chapitre 3
  >! [DEAD]
@@ -91,7 +92,7 @@ A 16 ans, elle est admise à l'Université Jean Piaget d'Angola, et déménage d
 >! Le corps de Natat est extrait de sa tombe après la Tuerie pour être rapatrié, avec les autres corps de l'Ossuaire, au [Gotoland][gotoland]. Les tentatives pour retrouver sa famille ont néanmoins été infructueuses, et décision a finalement été prise de l'inhumer dans le cimetière dédié aux victimes des Tueries au Gotoland, où elle repose encore à ce jour.
 
 #### Relation avec les autres participants
-//TODO
+??TODO
 |Personnage|Relation détaillée|Résumé|
 |----------|------------------|------|
 | [Aigjarn][aigjarn]|    |    |
@@ -113,10 +114,10 @@ A 16 ans, elle est admise à l'Université Jean Piaget d'Angola, et déménage d
 
  
  ## Citations
- //TODO
+ ??TODO
 
  ## Anecdotes
- //TODO
+ ??TODO
  - 
  -
  -

@@ -1,48 +1,48 @@
-[tuerie]: /Tuerie
-[2020]: /2020
-[2021]: /2021
-[2022]: /2022
-[2025]: /2025
-[2026]: /2026
-[SS]: /Sacrement_Sepulcral
-[BC]: /Babel's_Curse
-[monokuma]: /Monokuma
-[RL]: /Regis_Legatum
-[jun]: /Jun_Kyoshi
-[wen xiang]: /Wen_Xiang_Monogatari
-[gotoland]: /Gotoland
+[tuerie]: ?Tuerie
+[2020]: ?2020
+[2021]: ?2021
+[2022]: ?2022
+[2025]: ?2025
+[2026]: ?2026
+[SS]: ?Sacrement_Sepulcral
+[BC]: ?Babel's_Curse
+[monokuma]: ?Monokuma
+[RL]: ?Regis_Legatum
+[jun]: ?Jun_Kyoshi
+[wen xiang]: ?Wen_Xiang_Monogatari
+[gotoland]: ?Gotoland
 
-[Mika]: /Mika_Callaghan
-[inquisiteur]: /Monoaku
-[mao]: /Mao_Aozora
-[ema]: /Ema_Aozora
-[theodosia]: /Theodosia_Hoyle
-[eiji]: /Eiji_Maekawa
-[shun]: /Shun_Furusawa
-[sora]: /Sora_Seon
-[tritri]: /Tritri
-[judicaël]: /Judicaël_Levavi
-[lan yue]: /Lan_Yue
-[hibari]: /Hibari_Hagane
+[Mika]: ?Mika_Callaghan
+[inquisiteur]: ?Monoaku
+[mao]: ?Mao_Aozora
+[ema]: ?Ema_Aozora
+[theodosia]: ?Theodosia_Hoyle
+[eiji]: ?Eiji_Maekawa
+[shun]: ?Shun_Furusawa
+[sora]: ?Sora_Seon
+[tritri]: ?Tritri
+[judicaël]: ?Judicaël_Levavi
+[lan yue]: ?Lan_Yue
+[hibari]: ?Hibari_Hagane
 
 
-[teodora]: /Teodora_Kasjasdottir
-[edel]: /Edel_Gunarsson
-[pontife]: /Ultime_Pontife
-[ichiko]: /Ichiko_Naegi
-[konrad]: /Konrad_Mec
-[aigjarn]: /Aigjarn_Oïrat
-[toshiki]: /Toshiki_Kojima
-[shailey]: /Shailey_Carson
-[sabbatius]: /Sabbatius_Cerularios
-[serbaz]: /Serbaz_Helkewt
-[cyrus]: /Cyrus_Rahmani
-[kendra]: /Kendra_Sykes
-[evelyn]: /Ultime_Prince
-[natat]: /Natat
-[septima]: /Septima_Octavia
-[theoris]: /Theoris_Waleed
-[rachel]: /Rachel
+[teodora]: ?Teodora_Kasjasdottir
+[edel]: ?Edel_Gunarsson
+[pontife]: ?Ultime_Pontife
+[ichiko]: ?Ichiko_Naegi
+[konrad]: ?Konrad_Mec
+[aigjarn]: ?Aigjarn_Oïrat
+[toshiki]: ?Toshiki_Kojima
+[shailey]: ?Shailey_Carson
+[sabbatius]: ?Sabbatius_Cerularios
+[serbaz]: ?Serbaz_Helkewt
+[cyrus]: ?Cyrus_Rahmani
+[kendra]: ?Kendra_Sykes
+[evelyn]: ?Ultime_Prince
+[natat]: ?Natat
+[septima]: ?Septima_Octavia
+[theoris]: ?Theoris_Waleed
+[rachel]: ?Rachel
 
 
 > *"Désolé.... Pas à la hauteur. Reviendrais quand fini."*  
