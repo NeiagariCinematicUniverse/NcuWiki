@@ -24,7 +24,8 @@ export default {
     }),
     methods: {
         loadPages: async function() {
-            this.pages = await (await fetch("https://176.31.151.46:3000/api/list")).json();
+            let api = "http://127.0.0.1:3000/api/"; //https://176.31.151.46:3000/api/
+            this.pages = await (await fetch(api + "list")).json();
             // [
             //     {
             //         name: "Jaako",

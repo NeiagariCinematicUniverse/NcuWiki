@@ -56,12 +56,14 @@ export default {
     }),
     methods: {
         loadContent: async function () {
+            let api = "http://127.0.0.1:3000/api/"; //https://176.31.151.46:3000/api/
+
             console.log(this.$route);
             
             this.isIndex = (this.url === "index");
             if (this.isIndex) return;
 
-            let requestResult = await fetch("https://176.31.151.46:3000/api/page/" + this.url);
+            let requestResult = await fetch(api + "page/" + this.url);
             if (requestResult.status != 200) {
                 console.log("Code " + requestResult.status +
                     "\nLoaded home instead");
