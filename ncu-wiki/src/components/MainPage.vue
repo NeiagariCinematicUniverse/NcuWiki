@@ -5,7 +5,8 @@
     >
         <IndexPage id="index" v-if="this.isIndex" :search="this.search"></IndexPage>
         <HomePage id="home" v-if="this.isHome"></HomePage>
-        <h1 id="pageTitle" v-if="(!this.isIndex && !this.isHome)">{{ title }}</h1>
+        <EditPage id="edit" v-if="this.isEdit" :url="this.url"></EditPage>
+        <h1 id="pageTitle" v-if="(!this.isIndex && !this.isHome && !this.isEdit)">{{ title }}</h1>
         <SidePanel :url="this.url" v-if="!this.isIndex"></SidePanel>
         <div id="content" v-if="!this.isIndex"></div>
 
@@ -39,6 +40,7 @@ import SidePanel from './SidePanel.vue';
 import ContentsTable from './ContentsTable.vue';
 import IndexPage from './IndexPage.vue';
 import HomePage from './HomePage.vue';
+import EditPage from './EditPage.vue';
 const md = new Remarkable();
 
 export default {
@@ -53,15 +55,17 @@ export default {
         hasHeaders: false,
         isIndex: false,
         isHome: false,
+        isEdit: false,
     }),
     methods: {
         loadContent: async function () {
             let api = "http://127.0.0.1:3000/api/"; //https://176.31.151.46:3000/api/
-
-            console.log(this.$route);
             
             this.isIndex = (this.url === "index");
             if (this.isIndex) return;
+
+            this.isEdit = (this.url.startsWith("edit"));
+            if (this.isEdit) return;
 
             let requestResult = await fetch(api + "page/" + this.url);
             if (requestResult.status != 200) {
@@ -73,7 +77,7 @@ export default {
             let page = (await requestResult.json()).markdown;
 
             this.content = md.render(page);
-            this.title = this.url.replace("_", " ");
+            this.title = this.url.replace(new RegExp(/_/, 'g'), " ");
             document.getElementById("content").innerHTML = this.content;
             document.title = this.title + " - " + document.title;
         },
@@ -201,7 +205,7 @@ export default {
         }
     },
 
-    components: { SidePanel, ContentsTable, IndexPage, HomePage, }
+    components: { SidePanel, ContentsTable, IndexPage, HomePage, EditPage }
 }
 </script>
 
@@ -225,4 +229,10 @@ export default {
         padding-left: 30px
         padding-bottom: 18px
         padding-top: 18px
+
+    #edit
+        padding-left: 30px
+        padding-bottom: 18px
+        padding-top: 18px
+        padding-right: 30px
 </style>

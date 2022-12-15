@@ -2514,3 +2514,2478 @@ Processing by SidePanelController#side as */*
 Completed 200 OK in 1ms (Views: 0.6ms | Allocations: 224)
 
 
+Started GET "/api/page/" for 127.0.0.1 at 2022-12-14 20:36:40 +0100
+Started GET "/api/side/" for 127.0.0.1 at 2022-12-14 20:36:40 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/side"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/api/page"):
+  
+Started GET "/api/page/edit" for 127.0.0.1 at 2022-12-14 20:36:45 +0100
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 20:36:45 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 183)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./main_pages/edit.md):
+  
+app/controllers/main_pages_controller.rb:20:in `initialize'
+app/controllers/main_pages_controller.rb:20:in `open'
+app/controllers/main_pages_controller.rb:20:in `page'
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 1ms (Allocations: 126)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/list" for 127.0.0.1 at 2022-12-14 20:37:03 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 1.2ms | Allocations: 527)
+Completed 200 OK in 9ms (Views: 4.7ms | Allocations: 3160)
+
+
+Started GET "/api/page/edit" for 127.0.0.1 at 2022-12-14 20:37:11 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 112)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./main_pages/edit.md):
+  
+app/controllers/main_pages_controller.rb:20:in `initialize'
+app/controllers/main_pages_controller.rb:20:in `open'
+app/controllers/main_pages_controller.rb:20:in `page'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 20:37:11 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 101)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 20:37:47 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/list" for 127.0.0.1 at 2022-12-14 20:38:07 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 0.4ms | Allocations: 161)
+Completed 200 OK in 1ms (Views: 0.8ms | Allocations: 423)
+
+
+Started GET "/api/list" for 127.0.0.1 at 2022-12-14 20:38:10 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 0.3ms | Allocations: 162)
+Completed 200 OK in 2ms (Views: 1.3ms | Allocations: 394)
+
+
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 20:38:14 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 20:39:27 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 20:43:38 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 20:59:21 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 21:06:10 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 21:17:05 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 21:20:10 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 21:25:57 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 21:30:38 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 21:30:59 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 21:31:16 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 21:31:51 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 21:32:16 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 21:43:17 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 21:50:14 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 21:53:23 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 21:56:27 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-14 23:50:30 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 186)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 00:18:29 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 00:31:38 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 00:35:43 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 00:35:58 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 00:36:21 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 00:37:54 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 00:38:46 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 00:40:04 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 1ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 00:40:28 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 00:40:48 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 00:41:59 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 00:44:19 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:09:32 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:09:42 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:11:49 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:13:32 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:13:52 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:29:05 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:32:02 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:38:38 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 2ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:40:57 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:41:32 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:42:16 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:44:08 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:45:25 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:45:59 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/list" for 127.0.0.1 at 2022-12-15 01:46:25 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 1.5ms | Allocations: 418)
+Completed 200 OK in 13ms (Views: 4.6ms | Allocations: 2222)
+
+
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:47:42 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 1ms (Allocations: 112)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:48:51 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:49:53 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:50:16 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:51:06 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:52:33 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:54:24 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 01:58:29 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 02:03:08 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 02:03:45 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 02:04:12 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 02:04:40 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 02:12:52 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 02:17:23 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/page/" for 127.0.0.1 at 2022-12-15 13:28:14 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/page"):
+  
+Started GET "/api/side/" for 127.0.0.1 at 2022-12-15 13:28:14 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/side"):
+  
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 13:28:24 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 181)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 13:39:46 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 13:40:54 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 13:44:41 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 13:44:56 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 13:46:54 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/page/Mika_Callaghan" for 127.0.0.1 at 2022-12-15 13:51:40 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Mika_Callaghan"}
+Completed 500 Internal Server Error in 0ms (Allocations: 128)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./main_pages/Mika_Callaghan.md):
+  
+app/controllers/main_pages_controller.rb:20:in `initialize'
+app/controllers/main_pages_controller.rb:20:in `open'
+app/controllers/main_pages_controller.rb:20:in `page'
+Started GET "/api/side/Mika_Callaghan" for 127.0.0.1 at 2022-12-15 13:51:40 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Mika_Callaghan"}
+Completed 500 Internal Server Error in 0ms (Allocations: 101)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/Mika_Callaghan.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 13:57:31 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 13:58:11 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 13:59:08 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:00:12 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:00:33 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/page/" for 127.0.0.1 at 2022-12-15 14:00:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/page"):
+  
+Started GET "/api/side/" for 127.0.0.1 at 2022-12-15 14:00:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/side"):
+  
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:00:50 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:02:00 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:06:51 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:06:56 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:07:09 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:08:31 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:09:37 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:09:58 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:10:34 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:13:58 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 2ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:15:30 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:16:07 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:19:35 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:20:49 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/page/" for 127.0.0.1 at 2022-12-15 14:20:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/page"):
+  
+Started GET "/api/side/" for 127.0.0.1 at 2022-12-15 14:20:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/side"):
+  
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:21:02 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:23:48 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:24:34 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 1ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:25:07 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:26:02 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:29:32 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:30:07 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:30:38 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:31:48 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:32:32 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:35:59 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:37:25 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:39:40 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:41:35 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 1ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:45:15 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:45:28 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:46:12 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 1ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 14:59:03 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:01:03 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:04:32 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:04:54 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:05:32 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:10:05 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/page/" for 127.0.0.1 at 2022-12-15 15:14:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/page"):
+  
+Started GET "/api/side/" for 127.0.0.1 at 2022-12-15 15:14:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/side"):
+  
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:15:03 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/page/" for 127.0.0.1 at 2022-12-15 15:15:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/page"):
+  
+Started GET "/api/side/" for 127.0.0.1 at 2022-12-15 15:15:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/side"):
+  
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:15:39 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:16:38 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:17:29 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:20:29 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:21:00 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:22:24 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:23:13 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:24:12 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:26:40 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:27:41 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:28:17 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:28:33 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/list" for 127.0.0.1 at 2022-12-15 15:33:07 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 1.7ms | Allocations: 418)
+Completed 200 OK in 21ms (Views: 11.8ms | Allocations: 2976)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-15 15:33:10 +0100
+Processing by MainPagesController#page as */*
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-15 15:33:10 +0100
+  Parameters: {"id"=>"Jaako"}
+Processing by SidePanelController#side as */*
+  Rendering main_pages/page.json.jbuilder
+  Parameters: {"id"=>"Jaako"}
+  Rendered main_pages/page.json.jbuilder (Duration: 1.6ms | Allocations: 181)
+Completed 200 OK in 10ms (Views: 6.1ms | Allocations: 924)
+
+
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 3.5ms | Allocations: 131)
+Completed 200 OK in 10ms (Views: 7.7ms | Allocations: 1200)
+
+
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:33:31 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 111)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:34:33 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 1ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:35:59 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:37:12 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:42:57 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:43:35 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:44:10 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:46:08 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:46:18 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:47:06 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:48:18 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:51:28 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:52:27 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:54:50 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:58:15 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:59:15 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 15:59:41 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 16:00:38 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 16:01:17 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 16:32:45 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 16:45:40 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 16:51:30 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 16:53:32 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 16:58:41 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 2ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:00:02 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:00:33 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:00:54 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:11:17 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:11:46 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:15:18 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:17:20 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:17:31 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:17:49 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:18:00 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:18:15 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:18:26 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:19:00 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:19:52 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:20:07 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:20:38 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:21:22 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:21:31 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:21:41 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:23:23 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:23:44 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 5ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:23:57 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:24:14 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:24:26 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:24:35 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:29:01 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:29:15 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:30:42 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:32:40 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:33:40 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:55:15 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:56:42 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 17:57:19 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 18:00:55 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 18:04:09 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 18:04:32 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/page/edit&Jaako" for 127.0.0.1 at 2022-12-15 18:04:38 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"edit&Jaako"}
+Completed 500 Internal Server Error in 0ms (Allocations: 101)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./main_pages/edit&Jaako.md):
+  
+app/controllers/main_pages_controller.rb:20:in `initialize'
+app/controllers/main_pages_controller.rb:20:in `open'
+app/controllers/main_pages_controller.rb:20:in `page'
+Started GET "/api/side/edit&Jaako" for 127.0.0.1 at 2022-12-15 18:04:38 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit&Jaako"}
+Completed 500 Internal Server Error in 1ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit&Jaako.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit&Jaako" for 127.0.0.1 at 2022-12-15 18:05:15 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit&Jaako"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit&Jaako.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit&Jaako" for 127.0.0.1 at 2022-12-15 18:05:18 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit&Jaako"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit&Jaako.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 18:05:25 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit" for 127.0.0.1 at 2022-12-15 18:16:29 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 1ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/side/edit&Jaako" for 127.0.0.1 at 2022-12-15 18:16:36 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit&Jaako"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit&Jaako.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-15 18:16:36 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 1.1ms | Allocations: 77)
+Completed 200 OK in 4ms (Views: 3.7ms | Allocations: 293)
+
+
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-15 18:16:36 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.2ms | Allocations: 34)
+Completed 200 OK in 4ms (Views: 3.4ms | Allocations: 238)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-15 18:18:01 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 4.8ms | Allocations: 76)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 278)
+
+
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-15 18:18:01 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.2ms | Allocations: 33)
+Completed 200 OK in 1ms (Views: 0.9ms | Allocations: 235)
+
+
+Started GET "/api/side/edit&Natat" for 127.0.0.1 at 2022-12-15 18:18:07 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit&Natat"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit&Natat.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/page/Natat" for 127.0.0.1 at 2022-12-15 18:18:07 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Natat"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 0.4ms | Allocations: 51)
+Completed 200 OK in 1ms (Views: 1.0ms | Allocations: 255)
+
+
+Started GET "/api/side/Natat" for 127.0.0.1 at 2022-12-15 18:18:07 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Natat"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.2ms | Allocations: 33)
+Completed 200 OK in 7ms (Views: 1.8ms | Allocations: 235)
+
+
