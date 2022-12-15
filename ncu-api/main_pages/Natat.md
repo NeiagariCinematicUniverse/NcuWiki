@@ -39,16 +39,27 @@ Natat Santana est un personnage de la [Tuerie][tuerie] de [2026][2026], [Danganr
 ## Apparence
 ### Apparence générale
 Natat se présente comme une femme en léger surpoids s'habillant simplement, même dans l'environnement froid de la Cathédrale. Lors de sa première rencontre avec [Ichiko Naegi][ichiko], elle porte un simple débardeur rose, une veste magenta clair nouée autour de la ceinture, un pantalon gris et des bottes assorties à la veste. Si elle ne se permet que peu de bijoux, on peut noter la présence de boucles d'oreilles et de pins divers attachés à son haut. 
-Ses cheveux noirs sont tressés et piquetés d'une petite fleur [Pas fini wesh]
+
+Ses cheveux noirs sont tressés et piquetés d'une petite fleur qui lui a été offerte par ses parents, en signe de bonne chance pour ses années d'étude.
+
+De manière générale, on pourrait reprocher à la Nutritionniste de ne pas réellement se démarquer. Cependant, c'est précisemment son but. De manière générale, elle sait se cacher dans la foule.
 
 ### Cicatrices
-//TODO
+Les cicatrices de la jeune femme sont légion. Les plus visibles sont celles sur son visage, ainsi que sur sa poitrine. Néanmoins, elles sont loin d'être seules. C'est dans son dos que l'on trouve le plus de cicatrices, extrêmement nombreuses et pour la plupart semblables à des coups de fouet.
+
+Lorsqu'interrogée sur ses cicatrices, Natat se rétractera systématiquement.
 
 ## Personnalité
 ### Instinct maternel
-//TODO
+Le premier trait de caractère distinguable de la Nutritionniste est son côté très maternel. Elle se préocuppe de tout ceux qu'elle peut, en permanence, proposant conseils et aide quitte à en être invasive. Il est intéressant de noter que Natat a beaucoup de mal à comprendre le manque de motivation, et pourra parfois pousser trop loin ceux qu'elle veut aider.
+
+Le facteur le plus probable de ce comportement maternel et protecteur au maximum provient probablement de ses traumatismes enfouis, que nous détaillerons dans la section suivante. Néanmoins, le fait qu'elle ait toujours désiré des enfants desquels elle aurait pu s'occuper, rêve bloqué par son mari et son travail, joue sans doute grandement dans ce comportement.
+
+On ne peut sans doute pas non plus négliger l'historique familial (trois adelphes morts-nés) dans cette analyse.
 
 ### Angoisses profondes & Questionnement sexuel
+La Nutritionniste est perclue d'angoisse. Certains sujets et objets sont en mesure de provoquer une panique instantanée en elle. 
+
 //TODO
 
 ## Biographie
@@ -92,7 +103,7 @@ A 16 ans, elle est admise à l'Université Jean Piaget d'Angola, et déménage d
 >! Le corps de Natat est extrait de sa tombe après la Tuerie pour être rapatrié, avec les autres corps de l'Ossuaire, au [Gotoland][gotoland]. Les tentatives pour retrouver sa famille ont néanmoins été infructueuses, et décision a finalement été prise de l'inhumer dans le cimetière dédié aux victimes des Tueries au Gotoland, où elle repose encore à ce jour.
 
 #### Relation avec les autres participants
-??TODO
+//TODO
 |Personnage|Relation détaillée|Résumé|
 |----------|------------------|------|
 | [Aigjarn][aigjarn]|    |    |
@@ -114,11 +125,10 @@ A 16 ans, elle est admise à l'Université Jean Piaget d'Angola, et déménage d
 
  
  ## Citations
- ??TODO
+ //TODO
 
  ## Anecdotes
- ??TODO
- - 
+ - Lorsqu'interrogée à ce sujet durant une FAQ, Héloïse a déclaré que la musique représentant le mieux Natat est Birds de Imagine Dragons.
  -
  -
  -
