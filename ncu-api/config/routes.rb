@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get 'api/list', to: 'main_pages#list'
   get 'api/page/:id', to: 'main_pages#page'
   get 'api/side/:id', to: 'side_panel#side'
+  post 'api/edit/:id', to: 'edition#add_or_edit'
 end

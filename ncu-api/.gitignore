@@ -6,3 +6,9 @@ side_panels
 log
 bin
 tmp
+
+# The key for uploading files
+.key.enc
+.iv
+.key
+encrypt.rb

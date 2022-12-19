@@ -34,6 +34,30 @@
                         class="editor"
                         cols="6"
                     >
+                        <FileFormCard
+                            :file="'mainPage'"
+                            @addedFile="updateMainPage"
+                        />
+                    </v-col>
+
+                    <v-col
+                        align="center"
+                        class="editor"
+                        cols="6"
+                    >
+                        <FileFormCard
+                            :file="'sidePanel'"
+                            @addedFile="updateSidePanel"
+                        />
+                    </v-col>
+                </v-row>
+
+                <v-row>
+                    <v-col
+                        align="center"
+                        class="editor"
+                        cols="6"
+                    >
                         <v-textarea
                             outlined
                             class="Mono"
@@ -144,6 +168,7 @@
 <script>
 import EmbeddedPage from './EmbeddedPage.vue';
 import EmbeddedPanel from './EmbeddedPanel.vue';
+import FileFormCard from './FileFormCard.vue';
 
 
 export default {
@@ -204,10 +229,20 @@ export default {
             this.renderPvw();
         },
 
-        submit: function () {
+        submit: async function () {
             this.loading = true;
-            console.log("hehe");
-            //POST TO THE API
+            //FOR TEST
+            let jsonForm = JSON.stringify(this.form);
+            console.log(jsonForm);
+            
+            await fetch(this.api + "edit/" + this.form.fileName, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(this.form),
+            })
+            .catch(error => console.log(error));
 
             this.loading = false;
         },
@@ -223,6 +258,15 @@ export default {
             textArea.style.height = "auto";
             textArea.style.height = textArea.scrollHeight + "px";
         },
+        updateMainPage: function(name, content) {
+            this.form.fileName = name;
+            this.form.mainPage = content;
+            this.renderPvw();
+        },
+        updateSidePanel: function(name) {
+            this.form.sidePanel = name;
+            this.renderPvw();
+        },
 
         renderPvw: function() {
             EmbeddedPage.methods.renderAgain(this.form.fileName, this.form.mainPage);
@@ -234,7 +278,7 @@ export default {
         this.expandSidePanel();
         this.expandMainPage();
     },
-    components: { EmbeddedPage, EmbeddedPanel }
+    components: { EmbeddedPage, EmbeddedPanel, FileFormCard }
 }
 </script>
 
