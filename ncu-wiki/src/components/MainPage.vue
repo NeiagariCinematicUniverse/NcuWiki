@@ -3,7 +3,7 @@
         id="mainPage"
         align="left"
     >
-        <IndexPage id="index" v-if="this.isIndex" :search="this.search"></IndexPage>
+        <IndexPage id="index" v-if="this.isIndex" :search="this.search" :admin-mode="this.adminMode"></IndexPage>
         <HomePage id="home" v-if="this.isHome"></HomePage>
         <EditPage id="edit" v-if="this.isEdit" :url="this.url"></EditPage>
         <h1 id="pageTitle" v-if="(!this.isIndex && !this.isHome && !this.isEdit)">{{ title }}</h1>
@@ -47,6 +47,7 @@ export default {
     props: {
         url: String,
         search: String,
+        adminMode: Boolean,
     },
     data: () => ({
         content: null,

@@ -18,6 +18,23 @@ class EditionController < ApplicationController
         File.open("./side_panels/" + params[:fileName] + ".md", 'w') {|f| f.write params[:sidePanel]}
     end
 
+    def delete
+        #First: we make sure that the key is valid
+        key = decrypt_key
+        processedPass = params[:validationString]
+
+        if (processedPass != key) then
+            #Invalid
+            head :unauthorized
+            return
+        end
+
+        #main_page
+        File.delete("./main_pages/" + params[:fileName]+".md") if File.exist?("./main_pages/" + params[:fileName]+".md")
+        #side_panel
+        File.delete("./side_panels/" + params[:fileName]+".md") if File.exist?("./side_panels/" + params[:fileName]+".md")
+    end
+
     private
     
     def decrypt_key

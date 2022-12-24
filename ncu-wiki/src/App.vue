@@ -3,12 +3,39 @@
     <LeftMenu/>
     <MobileMenu/>
 
+    <v-speed-dial
+      id="adminButton"
+      v-if="this.displayAM"
+      v-model="adminMode"
+      bottom
+      right
+      absolute
+      fixed
+    >
+      <template v-slot:activator>
+        <v-btn
+          v-model="adminMode"
+          v-bind:class="{'red darken-2': !adminMode, 'green darken-1': adminMode}"
+          dark
+          fab
+        >
+          <v-icon v-if="adminMode">
+            mdi-lock
+          </v-icon>
+          <v-icon v-else>
+            mdi-lock-open
+          </v-icon>
+        </v-btn>
+      </template>
+    </v-speed-dial>
+
     <v-main>
       <TopBar v-on:validateSearch="pushSearch"/>
       <MainPage
         :url="currentPath"
         :key="this.search"
         :search="this.search"
+        :admin-mode="this.adminMode"
       ></MainPage>
     </v-main>
   </v-app>
@@ -35,6 +62,8 @@ export default {
     currentPath: window.location.search.substring(1),
     darkTheme: null,
     search: null,
+    adminMode: false,
+    displayAM: false,
   }),
 
   methods: {
@@ -59,11 +88,17 @@ export default {
     pushSearch: function(search) {
       this.search = search;
       this.currentPath = "index";
+      this.adminModeDisplay();
       
     },
+
+    adminModeDisplay: function() {
+      this.displayAM = (this.currentPath === "index");
+    }
   },
   created: function() {
     this.keepSystemTheme();
+    this.adminModeDisplay();
   },
 };
 </script>

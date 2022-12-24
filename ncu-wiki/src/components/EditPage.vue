@@ -112,7 +112,7 @@
                 </v-row>
             </v-container>
 
-            <v-dialog>
+            <v-dialog v-model="dialog">
                 <template v-slot:activator="{ attrs, on }">
                     <v-btn
                         dark
@@ -132,6 +132,22 @@
                         <span class="text-h5">Vérification d'identité</span>
                     </v-card-title>
                     <v-card-text id="infoText">
+                        <v-alert
+                            dense
+                            text
+                            type="success"
+                            v-if="success"
+                        >
+                            La fiche a été envoyée <strong>avec succès !</strong>
+                        </v-alert>
+                        <v-alert
+                            dense
+                            text
+                            type="error"
+                            v-if="error"
+                        >
+                            Une <strong>erreur</strong> est survenue lors de <strong>l'envoi de la fiche !</strong>
+                        </v-alert>
                         <p>
                             Afin de s'assurer que le contenu du site soit contrôlé, vous devez entrer ci-dessous la clé de validation.<br/>
                             Il s'agit d'une chaîne de 256 caractères répartis sur 4 lignes (64 caractères par ligne) générée aléatoirement.
@@ -150,7 +166,22 @@
                         </div>
                     </v-card-text>
                     <v-card-actions>
+                        <v-btn
+                            color="red darken-1"
+                            text
+                            @click="dialog = false"
+                        >
+                            Retour
+                        </v-btn>
                         <v-spacer></v-spacer>
+                        <v-btn
+                            color="blue darken-1"
+                            text
+                            :href="'?' + form.fileName"
+                            v-if="success"
+                        >
+                            Consulter
+                        </v-btn>
                         <v-btn
                             color="blue darken-1"
                             text
@@ -195,6 +226,9 @@ export default {
             form: Object.assign({}, defaultForm),
             loading: false,
             api: "http://127.0.0.1:3000/api/", //https://176.31.151.46:3000/api/,
+            success: false,
+            error: false,
+            dialog: false,
         };
     },
 
@@ -231,18 +265,17 @@ export default {
 
         submit: async function () {
             this.loading = true;
-            //FOR TEST
-            let jsonForm = JSON.stringify(this.form);
-            console.log(jsonForm);
             
-            await fetch(this.api + "edit/" + this.form.fileName, {
+            let result = await fetch(this.api + "edit/" + this.form.fileName, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(this.form),
-            })
-            .catch(error => console.log(error));
+            });
+
+            this.success = result.ok;
+            this.error = !result.ok;
 
             this.loading = false;
         },
