@@ -6081,3 +6081,391 @@ Processing by MainPagesController#list as */*
 Completed 200 OK in 7ms (Views: 5.4ms | Allocations: 485)
 
 
+Started GET "/api/page/" for 127.0.0.1 at 2022-12-25 00:07:47 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/page"):
+  
+Started GET "/api/side/" for 127.0.0.1 at 2022-12-25 00:07:47 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/side"):
+  
+Started GET "/api/list" for 127.0.0.1 at 2022-12-25 00:08:12 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 1.6ms | Allocations: 446)
+Completed 200 OK in 11ms (Views: 4.4ms | Allocations: 2288)
+
+
+Started GET "/api/list" for 127.0.0.1 at 2022-12-25 00:22:27 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 0.2ms | Allocations: 190)
+Completed 200 OK in 1ms (Views: 1.1ms | Allocations: 460)
+
+
+Started GET "/api/list" for 127.0.0.1 at 2022-12-25 00:22:31 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 0.2ms | Allocations: 190)
+Completed 200 OK in 3ms (Views: 2.7ms | Allocations: 432)
+
+
+Started GET "/api/side/edit&markdown_Test" for 127.0.0.1 at 2022-12-25 00:22:46 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"edit&markdown_Test"}
+Completed 500 Internal Server Error in 0ms (Allocations: 154)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/edit&markdown_Test.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/page/markdown_Test" for 127.0.0.1 at 2022-12-25 00:22:46 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"markdown_Test"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 0.7ms | Allocations: 124)
+Completed 200 OK in 4ms (Views: 3.1ms | Allocations: 448)
+
+
+Started GET "/api/side/markdown_Test" for 127.0.0.1 at 2022-12-25 00:22:46 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"markdown_Test"}
+Completed 500 Internal Server Error in 0ms (Allocations: 100)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ./side_panels/markdown_Test.md):
+  
+app/controllers/side_panel_controller.rb:3:in `initialize'
+app/controllers/side_panel_controller.rb:3:in `open'
+app/controllers/side_panel_controller.rb:3:in `side'
+Started GET "/api/page/" for 127.0.0.1 at 2022-12-25 00:23:02 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/page"):
+  
+Started GET "/api/side/" for 127.0.0.1 at 2022-12-25 00:23:02 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/side"):
+  
+Started GET "/api/list" for 127.0.0.1 at 2022-12-25 00:23:06 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 12.8ms | Allocations: 193)
+Completed 200 OK in 14ms (Views: 13.3ms | Allocations: 436)
+
+
+Started GET "/api/page/Natat" for 127.0.0.1 at 2022-12-25 00:36:32 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Natat"}
+Started GET "/api/side/Natat" for 127.0.0.1 at 2022-12-25 00:36:32 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Natat"}
+  Rendering main_pages/page.json.jbuilder
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.8ms | Allocations: 104)
+  Rendered main_pages/page.json.jbuilder (Duration: 1.6ms | Allocations: 458)
+Completed 200 OK in 3ms (Views: 2.5ms | Allocations: 844)
+
+
+Completed 200 OK in 6ms (Views: 3.4ms | Allocations: 1655)
+
+
+Started GET "/api/list" for 127.0.0.1 at 2022-12-25 00:42:12 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 0.2ms | Allocations: 194)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 446)
+
+
+Started GET "/api/list" for 127.0.0.1 at 2022-12-25 00:44:17 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 0.2ms | Allocations: 189)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 426)
+
+
+Started GET "/api/list" for 127.0.0.1 at 2022-12-25 00:44:20 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 0.2ms | Allocations: 189)
+Completed 200 OK in 1ms (Views: 1.0ms | Allocations: 426)
+
+
+Started GET "/api/list" for 127.0.0.1 at 2022-12-25 00:44:46 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 0.1ms | Allocations: 189)
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 426)
+
+
+Started GET "/api/list" for 127.0.0.1 at 2022-12-25 00:44:52 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 0.4ms | Allocations: 189)
+Completed 200 OK in 8ms (Views: 8.1ms | Allocations: 426)
+
+
+Started GET "/api/list" for 127.0.0.1 at 2022-12-25 00:45:23 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 0.4ms | Allocations: 189)
+Completed 200 OK in 5ms (Views: 4.1ms | Allocations: 426)
+
+
+Started GET "/api/list" for 127.0.0.1 at 2022-12-25 00:45:24 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 0.4ms | Allocations: 189)
+Completed 200 OK in 2ms (Views: 1.2ms | Allocations: 426)
+
+
+Started GET "/api/list" for 127.0.0.1 at 2022-12-25 00:45:26 +0100
+Processing by MainPagesController#list as */*
+  Rendering main_pages/list.json.jbuilder
+  Rendered main_pages/list.json.jbuilder (Duration: 0.4ms | Allocations: 189)
+Completed 200 OK in 3ms (Views: 3.1ms | Allocations: 427)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-25 00:49:43 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 1.1ms | Allocations: 64)
+Completed 200 OK in 10ms (Views: 6.9ms | Allocations: 270)
+
+
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-25 00:49:43 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.1ms | Allocations: 33)
+Completed 200 OK in 1ms (Views: 0.8ms | Allocations: 236)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-25 00:56:15 +0100
+Processing by MainPagesController#page as */*
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-25 00:56:15 +0100
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 0.9ms | Allocations: 64)
+Processing by SidePanelController#side as */*
+Completed 200 OK in 4ms (Views: 3.8ms | Allocations: 274)
+
+
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.1ms | Allocations: 33)
+Completed 200 OK in 1ms (Views: 0.6ms | Allocations: 235)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-25 00:56:19 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 0.9ms | Allocations: 64)
+Completed 200 OK in 4ms (Views: 3.8ms | Allocations: 266)
+
+
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-25 00:56:19 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.3ms | Allocations: 33)
+Completed 200 OK in 7ms (Views: 1.1ms | Allocations: 235)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-25 00:56:49 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 1.1ms | Allocations: 64)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 467)
+
+
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-25 00:56:49 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.1ms | Allocations: 33)
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 235)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-25 00:56:55 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 0.9ms | Allocations: 64)
+Completed 200 OK in 1ms (Views: 1.3ms | Allocations: 266)
+
+
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-25 00:56:55 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.2ms | Allocations: 33)
+Completed 200 OK in 3ms (Views: 2.9ms | Allocations: 235)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-25 00:58:49 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 1.0ms | Allocations: 64)
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-25 00:58:49 +0100
+Completed 200 OK in 2ms (Views: 2.2ms | Allocations: 623)
+
+
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.2ms | Allocations: 33)
+Completed 200 OK in 1ms (Views: 0.9ms | Allocations: 235)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-25 00:58:57 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 1.0ms | Allocations: 64)
+Completed 200 OK in 3ms (Views: 2.5ms | Allocations: 266)
+
+
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-25 00:58:57 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.2ms | Allocations: 33)
+Completed 200 OK in 3ms (Views: 2.7ms | Allocations: 235)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-25 00:59:39 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 0.9ms | Allocations: 64)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 266)
+
+
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-25 00:59:39 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.2ms | Allocations: 33)
+Completed 200 OK in 2ms (Views: 2.3ms | Allocations: 235)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-25 00:59:43 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 1.0ms | Allocations: 64)
+Completed 200 OK in 2ms (Views: 1.3ms | Allocations: 266)
+
+
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-25 00:59:43 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.2ms | Allocations: 33)
+Completed 200 OK in 1ms (Views: 0.9ms | Allocations: 235)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-25 01:00:34 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 1.2ms | Allocations: 64)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 266)
+
+
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-25 01:00:34 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.2ms | Allocations: 33)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 235)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-25 01:00:41 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 1.0ms | Allocations: 64)
+Completed 200 OK in 4ms (Views: 3.3ms | Allocations: 266)
+
+
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-25 01:00:41 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.2ms | Allocations: 33)
+Completed 200 OK in 4ms (Views: 3.1ms | Allocations: 239)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-25 01:01:25 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 0.9ms | Allocations: 64)
+Completed 200 OK in 1ms (Views: 1.2ms | Allocations: 266)
+
+
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-25 01:01:25 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.2ms | Allocations: 33)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 239)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-25 01:01:33 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 1.1ms | Allocations: 64)
+Completed 200 OK in 2ms (Views: 1.5ms | Allocations: 266)
+
+
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-25 01:01:33 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.2ms | Allocations: 33)
+Completed 200 OK in 6ms (Views: 5.3ms | Allocations: 235)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-25 01:06:53 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 1.0ms | Allocations: 64)
+Completed 200 OK in 3ms (Views: 2.4ms | Allocations: 266)
+
+
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-25 01:06:53 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.2ms | Allocations: 33)
+Completed 200 OK in 2ms (Views: 1.2ms | Allocations: 236)
+
+
+Started GET "/api/page/Jaako" for 127.0.0.1 at 2022-12-25 01:06:56 +0100
+Processing by MainPagesController#page as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering main_pages/page.json.jbuilder
+  Rendered main_pages/page.json.jbuilder (Duration: 0.9ms | Allocations: 64)
+Completed 200 OK in 3ms (Views: 2.6ms | Allocations: 266)
+
+
+Started GET "/api/side/Jaako" for 127.0.0.1 at 2022-12-25 01:06:56 +0100
+Processing by SidePanelController#side as */*
+  Parameters: {"id"=>"Jaako"}
+  Rendering side_panel/side.json.jbuilder
+  Rendered side_panel/side.json.jbuilder (Duration: 0.2ms | Allocations: 33)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 235)
+
+

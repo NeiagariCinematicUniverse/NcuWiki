@@ -5,7 +5,7 @@
         <p>Cette page répertorie les différents articles de ce Wiki.</p>
         <v-dialog v-model="dialog" @click:outside="cleanUp">
             <template v-slot:activator="{ attrs, on }">
-                <v-list subheader>
+                <v-list subheader id="indexList">
                     <v-list-item
                         v-for="page in filteredPages"
                         :key="page.name"
@@ -309,4 +309,9 @@ export default {
     
     .v-list-item--link:before
         border-radius: 5px
+
+    #indexList
+        .v-list-item
+            height: 48px
+
 </style>

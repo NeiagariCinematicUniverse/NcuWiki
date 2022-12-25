@@ -187,7 +187,8 @@ export default {
 
                     summary.innerText = "Cette section contient du spoil. Cliquez à vos risques et périls.";
                     spoiler.innerHTML = children[i].innerHTML;
-                    spoiler.innerText = spoiler.innerText.substring(2);
+                    spoiler.innerHTML = spoiler.innerHTML.replace("<p>! ", "<p>");
+                    spoiler.innerHTML = spoiler.innerHTML.replaceAll("<br>", "</p><p>");
                     spoiler.insertBefore(summary, spoiler.firstChild);
 
                     children[i].parentNode.replaceChild(spoiler, children[i]);
