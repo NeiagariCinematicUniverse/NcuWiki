@@ -3,7 +3,43 @@
         id="mainPage"
         align="left"
     >
-        <IndexPage id="index" v-if="this.isIndex" :search="this.search" :admin-mode="this.adminMode"></IndexPage>
+        <v-fab-transition v-if="adminMode">
+            <v-btn
+                id="editButton"
+                v-show="(!this.isIndex && !this.isHome && !this.isEdit)"
+                :href="'?edit&' + url"
+                color="grey lighten-1"
+                fab
+                dark
+                small
+                absolute
+                top
+                right
+            >
+                <v-icon dark>mdi-pencil-outline</v-icon>
+            </v-btn>
+        </v-fab-transition>
+        <v-fab-transition v-if="adminMode">
+            <v-btn
+                v-show="(!this.isIndex && !this.isHome && !this.isEdit)"
+                color="red lighten-2"
+                fab
+                dark
+                small
+                absolute
+                top
+                right
+                @click="deletePage"
+            >
+                <v-icon dark>mdi-delete</v-icon>
+            </v-btn>
+        </v-fab-transition>
+        <IndexPage id="index" v-if="this.isIndex" 
+            :search="this.search" 
+            :admin-mode="this.adminMode"
+            :delete="this.delete"
+            :to-del="this.toDel"
+        ></IndexPage>
         <HomePage id="home" v-if="this.isHome"></HomePage>
         <EditPage id="edit" v-if="this.isEdit" :url="this.url"></EditPage>
         <h1 id="pageTitle" v-if="(!this.isIndex && !this.isHome && !this.isEdit)">{{ title }}</h1>
@@ -57,10 +93,12 @@ export default {
         isIndex: false,
         isHome: false,
         isEdit: false,
+        delete: false,
+        toDel: "",
     }),
     methods: {
         loadContent: async function () {
-            let api = "http://127.0.0.1:3000/api/"; //https://176.31.151.46:3000/api/
+            let api = "http://localhost:3000/api/"; //"https://api.chimura-ryouwasa.top/api/";
             
             this.isIndex = (this.url === "index");
             if (this.isIndex) return;
@@ -78,7 +116,7 @@ export default {
             let page = (await requestResult.json()).markdown;
 
             this.content = md.render(page);
-            this.title = this.url.replace(new RegExp(/_/, 'g'), " ");
+            this.title = decodeURIComponent(this.url).replace(new RegExp(/_/, 'g'), " ");
             document.getElementById("content").innerHTML = this.content;
             document.title = this.title + " - " + document.title;
         },
@@ -194,6 +232,16 @@ export default {
                     children[i].parentNode.replaceChild(spoiler, children[i]);
                 }
             }
+        },
+
+        deletePage: function() {
+            this.delete = true;
+            this.toDel = this.url;
+            let childrenAmt = document.getElementById("content").children.length;
+            for (let i = 0; i < childrenAmt; i++) {
+                document.getElementById("content").firstChild.remove();
+            }
+            this.isIndex = true;
         }
     },
 
@@ -237,4 +285,7 @@ export default {
         padding-bottom: 18px
         padding-top: 18px
         padding-right: 30px
+
+    #editButton
+        margin-right: 45px
 </style>

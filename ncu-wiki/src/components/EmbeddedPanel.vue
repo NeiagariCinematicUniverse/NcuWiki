@@ -19,7 +19,6 @@
                             <template v-slot:placeholder>
                                 <v-row
                                     class="fill-height ma-0"
-                                    align="center"
                                     justify="center"
                                 >
                                     <v-progress-circular
@@ -60,7 +59,7 @@ export default {
     }),
 
     methods: {
-        loadembeddedPanel: async function () {
+        loadembeddedPanel: function () {
             let mdPics = this.mdContent.split("[FEUILLE_VOLANTE]: FinDesPhotos")[0];
             this.loadTabs(mdPics);
             

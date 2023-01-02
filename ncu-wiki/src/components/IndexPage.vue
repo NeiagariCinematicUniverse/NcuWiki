@@ -3,6 +3,17 @@
         <h1>Index</h1>
         <h2 v-if="search">Résultats pour la recherche {{ search }} :</h2>
         <p>Cette page répertorie les différents articles de ce Wiki.</p>
+        <v-btn
+            v-if="adminMode"
+            dark
+            color="purple lighten-1"
+            block
+            elevation="2"
+            href="?edit"
+            class="mb-4"
+        >
+            Créer une nouvelle fiche
+        </v-btn>
         <v-dialog v-model="dialog" @click:outside="cleanUp">
             <template v-slot:activator="{ attrs, on }">
                 <v-list subheader id="indexList">
@@ -15,6 +26,12 @@
                             <v-list-item-title v-text="page.name"></v-list-item-title>
                         </v-list-item-content>
 
+                        <v-list-item-action>
+                            <v-btn icon @click="downloadPage(page)" href="#">
+                                <v-icon color="grey lighten-1">mdi-download</v-icon>
+                            </v-btn>
+                        </v-list-item-action>
+                        
                         <v-list-item-action>
                             <v-btn icon :href="'?edit&' + page.url.substr(1)">
                                 <v-icon color="grey lighten-1">mdi-pencil-outline</v-icon>
@@ -138,7 +155,7 @@
             </v-card>
         </v-dialog>
         <p v-if="filteredPages.length == 0">Aucun résultat ne correspond à votre recherche...</p>
-        <p id="ytf isn't the list showing w\ this???" style="visibility: hidden; height: 15px;">{{ pages }}</p>
+        <a id="dlMask" style="visibility: hidden; height: 15px;">{{ pages }}</a>
     </v-card>
 </template>
 
@@ -147,9 +164,11 @@ export default {
     props: {
         search: String,
         adminMode: Boolean,
+        delete: Boolean,
+        toDel: String,
     },
     data: () => ({
-        api: "http://127.0.0.1:3000/api/", //https://176.31.151.46:3000/api/,
+        api: "http://localhost:3000/api/", //"https://api.chimura-ryouwasa.top/api/",
         pages: [],
         filteredPages: [],
         dialog: false,
@@ -191,6 +210,13 @@ export default {
                 }
             } else {
                 this.filteredPages = this.pages;
+            }
+        },
+
+        prepareForDeletion: function() {
+            if (this.delete) {
+                this.form.fileName = this.toDel;
+                this.dialog = true;
             }
         },
 
@@ -277,6 +303,25 @@ export default {
             this.passPhrase = "";
             this.iPassPhrase = "";
             this.step = 1;
+        },
+
+        downloadPage: async function(page) {
+            let mPageText = await (await (await fetch(this.api + "page/" + page.name)).json());
+            let mPage = new Blob([mPageText.markdown], {type: "text/markdown"});
+            let dlUrl = window.URL.createObjectURL(mPage);
+            let dlMask = document.getElementById("dlMask");
+            dlMask.href = dlUrl;
+            dlMask.download = page.name + "MainPage.md";
+            dlMask.click();
+            window.URL.revokeObjectURL(dlUrl);
+
+            let mSidePanelText = await (await (await fetch(this.api + "side/" + page.name)).json());
+            let mSidePanel = new Blob([mSidePanelText.markdown], {type: "text/markdown"});
+            dlUrl = window.URL.createObjectURL(mSidePanel);
+            dlMask.href = dlUrl;
+            dlMask.download = page.name + "SidePanel.md";
+            dlMask.click();
+            window.URL.revokeObjectURL(dlUrl);
         }
     },
     beforeMount: async function() {
@@ -284,6 +329,8 @@ export default {
         if (!document.title.startsWith("Index")) {
             document.title = "Index - " + document.title;
         }
+
+        this.prepareForDeletion();
     }
 }
 </script>

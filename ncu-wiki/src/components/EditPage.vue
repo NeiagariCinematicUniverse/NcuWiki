@@ -77,6 +77,7 @@
                         <EmbeddedPanel
                             :title="form.fileName"
                             :mdContent="form.sidePanel"
+                            ref="embeddedPanel"
                         />
                     </v-col>
                 </v-row>
@@ -225,7 +226,7 @@ export default {
         return {
             form: Object.assign({}, defaultForm),
             loading: false,
-            api: "http://127.0.0.1:3000/api/", //https://176.31.151.46:3000/api/,
+            api: "http://localhost:3000/api/", //"https://api.chimura-ryouwasa.top/api/",
             success: false,
             error: false,
             dialog: false,
@@ -264,6 +265,14 @@ export default {
         },
 
         submit: async function () {
+            if (this.success) {
+                this.dialog = false;
+                //reset the form
+                this.success = false;
+                this.form.validationString = "";
+                return;
+            }
+
             this.loading = true;
             
             let result = await fetch(this.api + "edit/" + this.form.fileName, {
@@ -292,18 +301,20 @@ export default {
             textArea.style.height = textArea.scrollHeight + "px";
         },
         updateMainPage: function(name, content) {
-            this.form.fileName = name;
+            if (this.form.fileName === "") this.form.fileName = name;
             this.form.mainPage = content;
             this.renderPvw();
         },
-        updateSidePanel: function(name) {
-            this.form.sidePanel = name;
+        updateSidePanel: function(name, content) {
+            console.log("imported " + name);
+            this.form.sidePanel = content;
             this.renderPvw();
         },
 
         renderPvw: function() {
+            this.form.fileName = decodeURIComponent(this.form.fileName).replace(new RegExp(/ /, 'g'), "_");
             EmbeddedPage.methods.renderAgain(this.form.fileName, this.form.mainPage);
-            EmbeddedPanel.methods.renderAgain(this.form.fileName, this.form.sidePanel);
+            this.$refs.embeddedPanel.renderAgain(this.form.fileName, this.form.sidePanel);
         },
     },
     mounted: async function () {

@@ -93,7 +93,7 @@ export default {
     },
 
     adminModeDisplay: function() {
-      this.displayAM = (this.currentPath === "index");
+      this.displayAM = (this.currentPath !== "" && !this.currentPath.startsWith("edit"));
     }
   },
   created: function() {
