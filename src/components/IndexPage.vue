@@ -168,7 +168,7 @@ export default {
         toDel: String,
     },
     data: () => ({
-        api: "http://localhost:3000/api/", //"https://api.chimura-ryouwasa.top/api/",
+        api: process.env.VUE_APP_API,
         pages: [],
         filteredPages: [],
         dialog: false,
@@ -251,7 +251,7 @@ export default {
                              "\n||```"+
                              "\n" + this.passPhrase + "```||"
                 }
-                await fetch("https://discord.com/api/webhooks/1055232714552397964/b0ytTuZ-XTKbfjUkj1s0I4FqiwVaDn_Il2t0jPzCx9Wt0zfdD_i1yHfsDDjzSaLbVNpG", {
+                await fetch(process.env.VUE_APP_DELETE_WEBHOOK, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

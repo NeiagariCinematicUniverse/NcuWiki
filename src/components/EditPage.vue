@@ -226,7 +226,7 @@ export default {
         return {
             form: Object.assign({}, defaultForm),
             loading: false,
-            api: "http://localhost:3000/api/", //"https://api.chimura-ryouwasa.top/api/",
+            api: process.env.VUE_APP_API,
             success: false,
             error: false,
             dialog: false,

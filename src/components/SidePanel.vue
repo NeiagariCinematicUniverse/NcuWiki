@@ -61,7 +61,7 @@ export default {
 
     methods: {
         loadSidePanel: async function () {
-            let api = "http://localhost:3000/api/"; //"https://api.chimura-ryouwasa.top/api/";
+            let api = process.env.VUE_APP_API;
             let requestResult = await fetch(api + "side/" + this.url);
             if (requestResult.status != 200) {
                 console.log("Code " + requestResult.status +

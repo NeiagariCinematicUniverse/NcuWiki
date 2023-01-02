@@ -98,7 +98,7 @@ export default {
     }),
     methods: {
         loadContent: async function () {
-            let api = "http://localhost:3000/api/"; //"https://api.chimura-ryouwasa.top/api/";
+            let api = process.env.VUE_APP_API;
             
             this.isIndex = (this.url === "index");
             if (this.isIndex) return;
