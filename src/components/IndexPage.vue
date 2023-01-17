@@ -306,20 +306,22 @@ export default {
         },
 
         downloadPage: async function(page) {
-            let mPageText = await (await (await fetch(this.api + "page/" + page.name)).json());
+            const name = page.url.substr(1);
+
+            let mPageText = await (await (await fetch(this.api + "page/" + name)).json());
             let mPage = new Blob([mPageText.markdown], {type: "text/markdown"});
             let dlUrl = window.URL.createObjectURL(mPage);
             let dlMask = document.getElementById("dlMask");
             dlMask.href = dlUrl;
-            dlMask.download = page.name + "MainPage.md";
+            dlMask.download = name + "MainPage.md";
             dlMask.click();
             window.URL.revokeObjectURL(dlUrl);
 
-            let mSidePanelText = await (await (await fetch(this.api + "side/" + page.name)).json());
+            let mSidePanelText = await (await (await fetch(this.api + "side/" + name)).json());
             let mSidePanel = new Blob([mSidePanelText.markdown], {type: "text/markdown"});
             dlUrl = window.URL.createObjectURL(mSidePanel);
             dlMask.href = dlUrl;
-            dlMask.download = page.name + "SidePanel.md";
+            dlMask.download = name + "SidePanel.md";
             dlMask.click();
             window.URL.revokeObjectURL(dlUrl);
         }

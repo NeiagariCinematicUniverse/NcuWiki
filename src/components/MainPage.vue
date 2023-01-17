@@ -226,10 +226,28 @@ export default {
                     summary.innerText = "Cette section contient du spoil. Cliquez à vos risques et périls.";
                     spoiler.innerHTML = children[i].innerHTML;
                     spoiler.innerHTML = spoiler.innerHTML.replace("<p>! ", "<p>");
-                    spoiler.innerHTML = spoiler.innerHTML.replaceAll("<br>", "</p><p>");
+                    this.createHints(spoiler);
                     spoiler.insertBefore(summary, spoiler.firstChild);
 
                     children[i].parentNode.replaceChild(spoiler, children[i]);
+                }
+            }
+        },
+
+        createHints: function(htmlElement) {
+            let children = htmlElement.children;
+
+            for (let i = 0; i < children.length; i++) {
+                if (children[i].tagName.toLocaleLowerCase() === "p" &&
+                    children[i].innerHTML.startsWith("<img")) {
+
+                    let hint = document.createElement("p");
+                    hint.className = "hint";
+                    hint.innerText = children[i].firstChild.getAttribute("alt");
+
+                    if (hint.innerHTML !== "") {
+                        htmlElement.insertBefore(hint, htmlElement.children[i + 1]);
+                    }
                 }
             }
         },
@@ -251,7 +269,7 @@ export default {
             this.identifyHeaders();
             this.hasHeaders = (this.contents.length > 0);
             this.addSpoilers("!");
-            
+            this.createHints(document.getElementById("content"));
         }
     },
 

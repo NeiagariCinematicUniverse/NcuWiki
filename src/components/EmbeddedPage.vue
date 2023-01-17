@@ -44,10 +44,29 @@ export default {
 
                     summary.innerText = "Cette section contient du spoil. Cliquez à vos risques et périls.";
                     spoiler.innerHTML = children[i].innerHTML;
-                    spoiler.innerText = spoiler.innerText.substring(2);
+                    spoiler.innerHTML = spoiler.innerHTML.replace("<p>! ", "<p>");
+                    this.createHints(spoiler);
                     spoiler.insertBefore(summary, spoiler.firstChild);
 
                     children[i].parentNode.replaceChild(spoiler, children[i]);
+                }
+            }
+        },
+
+        createHints: function(htmlElement) {
+            let children = htmlElement.children;
+
+            for (let i = 0; i < children.length; i++) {
+                if (children[i].tagName.toLocaleLowerCase() === "p" &&
+                    children[i].innerHTML.startsWith("<img")) {
+
+                    let hint = document.createElement("p");
+                    hint.className = "hint";
+                    hint.innerText = children[i].firstChild.getAttribute("alt");
+
+                    if (hint.innerHTML !== "") {
+                        htmlElement.insertBefore(hint, htmlElement.children[i + 1]);
+                    }
                 }
             }
         },
@@ -60,6 +79,7 @@ export default {
             document.getElementById("embeddedContent").innerHTML = this.content;
 
             this.addSpoilers("!");
+            this.createHints(document.getElementById("embeddedContent"));
         }
     },
 
