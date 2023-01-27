@@ -93,7 +93,7 @@ export default {
     },
 
     adminModeDisplay: function() {
-      this.displayAM = (this.currentPath !== "" && !this.currentPath.startsWith("edit"));
+      this.displayAM = (this.currentPath !== "" && !this.currentPath.startsWith("edit") && this.currentPath !== "sudoku");
     }
   },
   created: function() {

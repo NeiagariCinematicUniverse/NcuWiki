@@ -6,7 +6,7 @@
         <v-fab-transition v-if="adminMode">
             <v-btn
                 id="editButton"
-                v-show="(!this.isIndex && !this.isHome && !this.isEdit)"
+                v-show="(!this.isIndex && !this.isHome && !this.isEdit && !this.isEaster)"
                 :href="'?edit&' + url"
                 color="grey lighten-1"
                 fab
@@ -21,7 +21,7 @@
         </v-fab-transition>
         <v-fab-transition v-if="adminMode">
             <v-btn
-                v-show="(!this.isIndex && !this.isHome && !this.isEdit)"
+                v-show="(!this.isIndex && !this.isHome && !this.isEdit && !this.isEaster)"
                 color="red lighten-2"
                 fab
                 dark
@@ -42,7 +42,8 @@
         ></IndexPage>
         <HomePage id="home" v-if="this.isHome"></HomePage>
         <EditPage id="edit" v-if="this.isEdit" :url="this.url"></EditPage>
-        <h1 id="pageTitle" v-if="(!this.isIndex && !this.isHome && !this.isEdit)">{{ title }}</h1>
+        <EasterEgg id="sudoku" v-if="this.isEaster"></EasterEgg>
+        <h1 id="pageTitle" v-if="(!this.isIndex && !this.isHome && !this.isEdit &&!this.isEaster)">{{ title }}</h1>
         <SidePanel :url="this.url" v-if="!this.isIndex"></SidePanel>
         <div id="content" v-if="!this.isIndex"></div>
 
@@ -66,7 +67,7 @@
             </v-row>
         </v-container -->
 
-        <ContentsTable id="contentsTable" v-if="this.hasHeaders && !this.isIndex" :contents="this.contents"></ContentsTable>
+        <ContentsTable id="contentsTable" v-if="this.hasHeaders && !this.isIndex && !this.isEaster" :contents="this.contents"></ContentsTable>
     </v-card>
 </template>
 
@@ -77,6 +78,7 @@ import ContentsTable from './ContentsTable.vue';
 import IndexPage from './IndexPage.vue';
 import HomePage from './HomePage.vue';
 import EditPage from './EditPage.vue';
+import EasterEgg from './EasterEgg.vue';
 const md = new Remarkable();
 
 export default {
@@ -93,6 +95,7 @@ export default {
         isIndex: false,
         isHome: false,
         isEdit: false,
+        isEaster: false,
         delete: false,
         toDel: "",
     }),
@@ -105,6 +108,9 @@ export default {
 
             this.isEdit = (this.url.startsWith("edit"));
             if (this.isEdit) return;
+
+            this.isEaster = (this.url === "sudoku");
+            if (this.isEaster) return;
 
             let requestResult = await fetch(api + "page/" + this.url);
             if (requestResult.status != 200) {
@@ -273,7 +279,7 @@ export default {
         }
     },
 
-    components: { SidePanel, ContentsTable, IndexPage, HomePage, EditPage }
+    components: { SidePanel, ContentsTable, IndexPage, HomePage, EditPage, EasterEgg }
 }
 </script>
 
@@ -306,4 +312,9 @@ export default {
 
     #editButton
         margin-right: 45px
+    
+    #sudoku
+        padding-left: 30px
+        padding-top: 18px
+        padding-right: 30px
 </style>
