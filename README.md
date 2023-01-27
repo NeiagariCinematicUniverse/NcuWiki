@@ -1,3 +1,6 @@
+[ncuapi]: https://github.com/NeiagariCinematicUniverse/NcuApi
+
+
 # NcuWiki
 This is the repository that will host all the code used to make the NCU's wiki.
 
@@ -7,7 +10,7 @@ this piece of software is meant to work initially.
 
 First off, know that there are two parts: one for the client side exclusively (this
 one) and one for the server side exclusively (the 
-[NcuApi](/NeiagariCinematicUniverse/NcuApi)). As a natural effect of this approach,
+[NcuApi][ncuapi]). As a natural effect of this approach,
 the API is able to work on its own, whereas this part is not, since it relies on the
 data retreivable from the API.
 
@@ -120,7 +123,7 @@ lanched though.
 > being.*
 
 For more details on the API, go check the 
-[Ruby API made to go along this wiki](/NeiagariCinematicUniverse/NcuApi).
+[Ruby API made to go along this wiki][ncuapi].
 
 ### Making it yours!
 As an effort to make this repository reusable for anyone that might want to do a
@@ -138,3 +141,8 @@ more patient, I think it's worth the wait. (Laybe I'm too full of myself...)
 > - *`/public/index.html`*
 > - *`/.env`*
 > - *`/.env.production`*
+
+## Licence
+This repository is licenced under the MIT licence terms. That means that you are
+allowed to do whatever you want with the code here, as long as you cite its
+authors in a visible place (in the info pop-up for instance 👍️).
