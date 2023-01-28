@@ -12,7 +12,7 @@
             >
                 <v-img
                     align="left"
-                    src="@/assets/logoncu.png"
+                    :src="logoSource"
                     contain
                     max-height="100"
                     max-width="100"
@@ -27,7 +27,7 @@
             >
                 <div class="title">
                     <h1 id="mainTitle">
-                        NcuWiki
+                        {{ title }}
                     </h1>
                 </div>
             </v-col>
@@ -82,7 +82,9 @@
     export default {
         data: () => ({
             search: null,
-            deployed: false
+            deployed: false,
+            title: process.env.VUE_APP_NAME,
+            logoSource: process.env.VUE_APP_MAIN_LOGO, 
         }),
         methods: {
             setSearchValue: function(event) {
@@ -96,7 +98,7 @@
                     this.$emit("validateSearch", this.search);
                 }
             }
-        }
+        },
     }
 </script>
 

@@ -42,7 +42,7 @@ export default {
                     let spoiler = document.createElement("details");
                     let summary = document.createElement("summary");
 
-                    summary.innerText = "Cette section contient du spoil. Cliquez à vos risques et périls.";
+                    summary.innerText = process.env.VUE_APP_SPOILER_WARNING;
                     spoiler.innerHTML = children[i].innerHTML;
                     spoiler.innerHTML = spoiler.innerHTML.replace("<p>! ", "<p>");
                     this.createHints(spoiler);
@@ -78,14 +78,14 @@ export default {
             document.getElementById("embeddedPageTitle").innerText = this.realTitle;
             document.getElementById("embeddedContent").innerHTML = this.content;
 
-            this.addSpoilers("!");
+            this.addSpoilers(process.env.VUE_APP_SPOILER_TAG);
             this.createHints(document.getElementById("embeddedContent"));
         }
     },
 
     mounted: function () {
         this.loadContent();
-        this.addSpoilers("!");
+        this.addSpoilers(process.env.VUE_APP_SPOILER_TAG);
     },
 }
 </script>

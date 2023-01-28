@@ -46,26 +46,7 @@
         <h1 id="pageTitle" v-if="(!this.isIndex && !this.isHome && !this.isEdit &&!this.isEaster)">{{ title }}</h1>
         <SidePanel :url="this.url" v-if="!this.isIndex"></SidePanel>
         <div id="content" v-if="!this.isIndex"></div>
-
-        <!-- v-container id="pageContent">
-            <v-row id="title">
-                <h1>{{ title }}</h1>
-            </v-row>
-            <v-row>
-                <v-col align="left" id="content"
-                    cols="20"
-                    md="10">
-                    <Content added dynamically>
-                    {{ content }}
-                </v-col>
-
-                <v-col align="left" id="sidePanel"
-                    cols="2"
-                    md="2">
-                    <SidePanel :url="this.url"></SidePanel>
-                </v-col>
-            </v-row>
-        </v-container -->
+    
 
         <ContentsTable id="contentsTable" v-if="this.hasHeaders && !this.isIndex && !this.isEaster" :contents="this.contents"></ContentsTable>
     </v-card>
@@ -229,7 +210,7 @@ export default {
                     let spoiler = document.createElement("details");
                     let summary = document.createElement("summary");
 
-                    summary.innerText = "Cette section contient du spoil. Cliquez à vos risques et périls.";
+                    summary.innerText = process.env.VUE_APP_SPOILER_WARNING;
                     spoiler.innerHTML = children[i].innerHTML;
                     spoiler.innerHTML = spoiler.innerHTML.replace("<p>! ", "<p>");
                     this.createHints(spoiler);
@@ -274,7 +255,7 @@ export default {
         if (!this.isIndex) {
             this.identifyHeaders();
             this.hasHeaders = (this.contents.length > 0);
-            this.addSpoilers("!");
+            this.addSpoilers(process.env.VUE_APP_SPOILER_TAG);
             this.createHints(document.getElementById("content"));
         }
     },

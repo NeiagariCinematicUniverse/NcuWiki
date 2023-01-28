@@ -208,17 +208,17 @@ export default {
         const defaultForm = Object.freeze({
             fileName: "",
             mainPage: "[commentaire1]: Liens_utiles\n" +
-                "[tuerie]: ?Tuerie\n" +
+                "[" + process.env.VUE_APP_MAIN_PAGE_LINK_EXAMPLE.toLowerCase() + "]: ?" + process.env.VUE_APP_MAIN_PAGE_LINK_EXAMPLE + "\n" +
                 "\n" +
                 "[commentaire2]: Ecriture_du_texte",
             sidePanel: "[commentaire1]: Liens_vers_les_images_(les_noms_des_liens_seront_utilisés_pour_nommer_les_onglets)_:\n" +
-                "[Portrait]: https://cdn.discordapp.com/attachments/1046024931139407902/1046025687103983656/Portrait.jpg\n" +
+                "[Portrait]: " + process.env.VUE_APP_PORTRAIT_EXAMPLE + "\n" +
                 "\n" +
                 "[commentaire2]: Séparateur_indiquant_la_fin_des_images_:\n" +
-                "[FEUILLE_VOLANTE]: FinDesPhotos\n" +
+                process.env.VUE_APP_IMAGES_SEPARATOR + "\n" +
                 "\n" +
                 "[commentaire3]: Liens_utiles_:\n" +
-                "[2022]: ?2022\n" +
+                "[" + process.env.VUE_APP_MAIN_PAGE_LINK_EXAMPLE.toLowerCase() + "]: ?" + process.env.VUE_APP_MAIN_PAGE_LINK_EXAMPLE + "\n" +
                 "\n" +
                 "[commentaire4]: Contenu_du_panneau_de_droite_(ne_pas_utiliser_un_titre_de_niveau_inférieur_à_3)_:",
             validationString: "",

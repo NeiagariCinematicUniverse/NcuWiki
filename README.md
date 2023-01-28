@@ -113,7 +113,7 @@ you might not be seeing much, as the API working along side it is probably not
 lanched though.
 
 > **Note:**  
-> *If you are slightly used to Vue, you might have notices that I'm using the `serve`
+> *If you are slightly used to Vue, you might have noticed that I'm using the `serve`
 > name instead of the `dev`. Those are technically the same, however the `dev` alias
 > is only defined by default on Vue 3 web apps, while this one is a Vue 2, in order
 > to remain compatible with Vuetify framework, which hadn't released a version for
@@ -134,11 +134,13 @@ It isn't yet the case, but it is going to be in a soon release, so please be a l
 more patient, I think it's worth the wait. (Laybe I'm too full of myself...)
 
 > **Note:**  
-> *While I am saying this, you shall keep in mind that there is ONE thing that can't
-> be changed dynamically, that is the [`index.html`](#the-index-indexhtml) file.*
+> *While I am saying this, you shall keep in mind that there are TWO thing that can't
+> be changed dynamically, that are the [`index.html`](#the-index-indexhtml) and the
+> `main.css` files.*
 > 
 > *In the end, you will have to edit three files :*
 > - *`/public/index.html`*
+> - *`/src/assets/styles/main.css`*
 > - *`/.env`*
 > - *`/.env.production`*
 

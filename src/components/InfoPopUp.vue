@@ -22,7 +22,7 @@
                 <span class="text-h5">Informations sur le site</span>
             </v-card-title>
             <v-card-text id="infoText">
-                Ce site internet a été développé par <a href="https://github.com/RedNeath">RedNeath</a>, en coopération avec tous les membres du Neiagari Cinematic Universe (NCU). Son contenu est quant à lui entièrement rédigé et modéré par l'équipe du NCU.<br>
+                Ce site internet a été développé par <a href="https://github.com/RedNeath">RedNeath</a>, en coopération avec tous les membres du Neiagari Cinematic Universe (NCU). Son contenu est quant à lui entièrement rédigé et modéré par {{ mods }}.<br>
                 Il n'utilise aucun cookie (c'est rare de nos jours) et est entièrement open-source, disponible <a href="https://github.com/NeiagariCinematicUniverse/NcuWiki">ici</a>
                 <br>
                 <br>
@@ -49,11 +49,10 @@
 </template>
 
 <script>
-    export default {
-    data() {
-        return {
-            dialog: false,
-        };
-    }
+export default {
+    data: () => ({
+        dialog: false,
+        mods: process.env.VUE_APP_MODERATORS,
+    }),
 }
 </script>

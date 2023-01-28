@@ -73,7 +73,7 @@ export default {
 
             let sidePanelMd = (await requestResult.json()).markdown;
 
-            let mdPics = sidePanelMd.split("[FEUILLE_VOLANTE]: FinDesPhotos")[0];
+            let mdPics = sidePanelMd.split(process.env.VUE_APP_IMAGES_SEPARATOR)[0];
             this.loadTabs(mdPics);
             
             this.sidePanel = md.render(sidePanelMd);
@@ -102,7 +102,7 @@ export default {
                 //Verifying that we found the picture source:
                 if (!picSrc.startsWith("h")) {
                     console.log("Picture link not found... Replaced by the default picture.");
-                    picSrc = "https://cdn.discordapp.com/attachments/485070483260440581/1046015931865911377/unknown.png";
+                    picSrc = process.env.VUE_APP_IMAGE_NOT_FOUND;
                 }
 
                 this.pics[i] = {

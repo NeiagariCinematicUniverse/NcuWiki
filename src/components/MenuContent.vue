@@ -3,12 +3,12 @@
         <v-list>
             <v-list-item class="px-2">
                 <v-list-item-avatar>
-                    <v-img src="https://cdn.discordapp.com/attachments/485070483260440581/1025151505143181352/unknown.png"></v-img>
+                    <v-img :src="menuLogo"></v-img>
                 </v-list-item-avatar>
 
                 <v-list-item-content>
                     <v-list-item-title class="text-h6">
-                        NcuWiki
+                        {{ title }}
                     </v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
@@ -35,3 +35,12 @@
         </v-list>
     </div>
 </template>
+
+<script>
+export default {
+    data: () => ({
+        title: process.env.VUE_APP_NAME,
+        menuLogo: process.env.VUE_APP_MENU_LOGO,
+    })
+}
+</script>

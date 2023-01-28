@@ -60,7 +60,7 @@ export default {
 
     methods: {
         loadembeddedPanel: function () {
-            let mdPics = this.mdContent.split("[FEUILLE_VOLANTE]: FinDesPhotos")[0];
+            let mdPics = this.mdContent.split(process.env.VUE_APP_IMAGES_SEPARATOR)[0];
             this.loadTabs(mdPics);
             
             this.embeddedPanel = md.render(this.mdContent);
@@ -88,7 +88,7 @@ export default {
 
                 //Verifying that we found the picture source:
                 if (!picSrc.startsWith("h")) {
-                    picSrc = "https://cdn.discordapp.com/attachments/485070483260440581/1046015931865911377/unknown.png";
+                    picSrc = process.env.VUE_APP_IMAGE_NOT_FOUND;
                 }
 
                 this.pics[i] = {
@@ -100,7 +100,7 @@ export default {
 
         renderAgain: function(title, mdContent) {
             this.realTitle = title.replace(new RegExp(/_/, 'g'), " ");
-            let mdPics = mdContent.split("[FEUILLE_VOLANTE]: FinDesPhotos")[0];
+            let mdPics = mdContent.split(process.env.VUE_APP_IMAGES_SEPARATOR)[0];
             this.pics = [];
             this.currentTab = null;
             this.loadTabs(mdPics);
