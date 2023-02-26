@@ -54,11 +54,12 @@
 
                 <v-row>
                     <v-col
-                        align="center"
+                        
                         class="editor"
                         cols="6"
+                        id="sidePanelEditor"
                     >
-                        <v-textarea
+                        <!--v-textarea
                             outlined
                             class="Mono"
                             v-model="form.sidePanel"
@@ -66,7 +67,7 @@
                             name="input-7-4 sidePanel"
                             label="Zone d'édition du panneau de droite"
                             @input="expandSidePanel(); renderPvw()"
-                        ></v-textarea>
+                        ></v-textarea-->
                     </v-col>
 
                     <v-col
@@ -82,13 +83,13 @@
                     </v-col>
                 </v-row>
 
-                <v-row>
+                <v-row id="bottomRow">
                     <v-col
-                        align="center"
                         class="editor"
                         cols="6"
+                        id="mainPageEditor"
                     >
-                        <v-textarea
+                        <!--v-textarea
                             outlined
                             class="Mono"
                             v-model="form.mainPage"
@@ -96,7 +97,7 @@
                             name="input-7-4 mainPage"
                             label="Zone d'édition de la fiche"
                             @input="expandMainPage(); renderPvw();"
-                        ></v-textarea>
+                        ></v-textarea-->
                     </v-col>
                     
                     <v-col
@@ -201,6 +202,7 @@
 import EmbeddedPage from './EmbeddedPage.vue';
 import EmbeddedPanel from './EmbeddedPanel.vue';
 import FileFormCard from './FileFormCard.vue';
+import * as monaco from 'monaco-editor';
 
 
 export default {
@@ -230,6 +232,8 @@ export default {
             success: false,
             error: false,
             dialog: false,
+            sidePanelEditor: null,
+            mainPageEditor: null,
         };
     },
 
@@ -288,26 +292,49 @@ export default {
 
             this.loading = false;
         },
-        expandSidePanel: function () {
-            let textArea = document.getElementsByName("input-7-4 sidePanel")[0];
+        loadEditor: function() {
+            this.sidePanelEditor = monaco.editor.create(document.getElementById("sidePanelEditor"), {
+                value: this.form.sidePanel,
+                wordWrap: 'on',
+                language: "markdown",
+                automaticLayout: true,
+                minimap: {
+                    enabled: false
+                },
+                theme: "vs-dark"
+            });
 
-            textArea.style.height = "auto";
-            textArea.style.height = textArea.scrollHeight + "px";
-        },
-        expandMainPage: function () {
-            let textArea = document.getElementsByName("input-7-4 mainPage")[0];
-            
-            textArea.style.height = "auto";
-            textArea.style.height = textArea.scrollHeight + "px";
+            this.sidePanelEditor.getModel().onDidChangeContent(() => {
+                this.form.sidePanel = this.sidePanelEditor.getModel().getValue();
+                this.renderPvw();
+            });
+
+            this.mainPageEditor = monaco.editor.create(document.getElementById("mainPageEditor"), {
+                value: this.form.mainPage,
+                wordWrap: 'on',
+                language: "markdown",
+                automaticLayout: true,
+                minimap: {
+                    enabled: false
+                },
+                theme: "vs-dark"
+            });
+
+            this.mainPageEditor.getModel().onDidChangeContent(() => {
+                this.form.mainPage = this.mainPageEditor.getModel().getValue();
+                this.renderPvw();
+            });
         },
         updateMainPage: function(name, content) {
             if (this.form.fileName === "") this.form.fileName = name;
             this.form.mainPage = content;
+            this.mainPageEditor.getModel().setValue(this.form.mainPage);
             this.renderPvw();
         },
         updateSidePanel: function(name, content) {
             console.log("imported " + name);
             this.form.sidePanel = content;
+            this.sidePanelEditor.getModel().setValue(this.form.sidePanel);
             this.renderPvw();
         },
 
@@ -319,8 +346,7 @@ export default {
     },
     mounted: async function () {
         await this.loadMd();
-        this.expandSidePanel();
-        this.expandMainPage();
+        this.loadEditor();
     },
     components: { EmbeddedPage, EmbeddedPanel, FileFormCard }
 }
@@ -350,4 +376,8 @@ export default {
     #textContainer
         height: 150px
         padding: 10px
+
+    #bottomRow
+        margin-bottom: 0px
+        min-height: 300px
 </style>
