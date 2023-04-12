@@ -1,0 +1,14 @@
+USE NCU_BDD;
+
+DROP TABLE Chapitres;
+
+CREATE TABLE  IF NOT EXISTS Chapitres (
+    id_chapitre TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    titre VARCHAR(50) NOT NULL,
+    prologue BOOLEAN NOT NULL DEFAULT FALSE,
+    dernier BOOLEAN NOT NULL DEFAULT FALSE,
+    appartient_a INT(4) NOT NULL,
+    prive BOOLEAN NOT NULL DEFAULT TRUE,
+
+    CONSTRAINT FK_appartient_a FOREIGN KEY (appartient_a) REFERENCES Tueries(id_tuerie) NOT NULL
+);
