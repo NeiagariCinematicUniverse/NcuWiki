@@ -3,7 +3,7 @@ USE NCU_BDD;
 DROP TABLE Victimes;
 CREATE TABLE  IF NOT EXISTS Victimes (
     chapitre TINYINT UNSIGNED,
-    victime TINYINT UNSIGNED,
+    victime SMALLINT UNSIGNED,
     maniere VARCHAR(100),
     final_bullet BOOLEAN NOT NULL DEFAULT FALSE,
 

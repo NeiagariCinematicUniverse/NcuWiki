@@ -3,7 +3,7 @@ USE NCU_BDD;
 DROP TABLE Participe;
 /*Relation ternaire entre Roles, Tueries et Personnages*/
 CREATE TABLE  IF NOT EXISTS Participe (
-    personnage TINYINT UNSIGNED ,
+    personnage SMALLINT UNSIGNED ,
     role_attribue TINYINT UNSIGNED ,
     tuerie TINYINT UNSIGNED,
     

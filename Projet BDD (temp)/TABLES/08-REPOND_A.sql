@@ -5,7 +5,7 @@ DROP TABLE Repond_a;
 /*Table de lien entre Pronoms et Personnages*/
 CREATE TABLE  IF NOT EXISTS Repond_a (
     libelle VARCHAR(5),
-    id_perso TINYINT UNSIGNED,
+    id_perso SMALLINT UNSIGNED,
 	
     CONSTRAINT FK_libelle FOREIGN KEY (libelle) REFERENCES Pronoms(libelle),
     CONSTRAINT FK_perso FOREIGN KEY(id_perso) REFERENCES Personnages(id_personnage),

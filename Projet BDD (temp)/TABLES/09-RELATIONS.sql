@@ -5,9 +5,9 @@ DROP TABLE Relations;
 
 /*Relation fait le lien entre deux personnages (une relation peut être à soi-même)*/
 CREATE TABLE  IF NOT EXISTS Relations(
-    id_relation TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
-    personnage1 INT(4) NOT NULL,
-    personnage2 INT(4) NOT NULL,
+    id_relation SMALLINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    personnage1 SMALLINT UNSIGNED NOT NULL,
+    personnage2 SMALLINT UNSIGNED NOT NULL,
     nature VARCHAR(20) NOT NULL DEFAULT 'neutre', /*EX : amour, amitié, haine....*/
     canon BOOLEAN NOT NULL DEFAULT TRUE,
     ast BOOLEAN NOT NULL DEFAULT FALSE,

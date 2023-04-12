@@ -3,7 +3,7 @@ USE NCU_BDD;
 DROP TABLE Personnages;
 
 CREATE TABLE  IF NOT EXISTS Personnages (
-    id_personnage TINYINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    id_personnage SMALLINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     prenom VARCHAR(25),
     prenom_s_supp VARCHAR(70),
     nom VARCHAR(40),

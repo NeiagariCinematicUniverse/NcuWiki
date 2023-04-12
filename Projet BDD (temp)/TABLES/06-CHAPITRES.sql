@@ -7,7 +7,7 @@ CREATE TABLE  IF NOT EXISTS Chapitres (
     titre VARCHAR(50) NOT NULL,
     prologue BOOLEAN NOT NULL DEFAULT FALSE,
     dernier BOOLEAN NOT NULL DEFAULT FALSE,
-    appartient_a INT(4) NOT NULL,
+    appartient_a TINYINT UNSIGNED NOT NULL,
     prive BOOLEAN NOT NULL DEFAULT TRUE,
 
     CONSTRAINT FK_appartient_a FOREIGN KEY (appartient_a) REFERENCES Tueries(id_tuerie) NOT NULL
