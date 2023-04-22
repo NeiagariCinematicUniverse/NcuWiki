@@ -215,7 +215,10 @@ export default {
 
         prepareForDeletion: function() {
             if (this.delete) {
-                this.form.fileName = this.toDel;
+                this.selectedPage = {
+                    name: this.toDel,
+                    url: document.location.search
+                };
                 this.dialog = true;
             }
         },
@@ -243,6 +246,8 @@ export default {
                         ).blob()
                     ).text()
                 );
+
+                console.log(this.selectedPage);
 
                 let discordMessage = {
                     content: "**ATTENTION!!**"+

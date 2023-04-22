@@ -59,15 +59,6 @@
                         cols="6"
                         id="sidePanelEditor"
                     >
-                        <!--v-textarea
-                            outlined
-                            class="Mono"
-                            v-model="form.sidePanel"
-                            color="purple darken-2"
-                            name="input-7-4 sidePanel"
-                            label="Zone d'édition du panneau de droite"
-                            @input="expandSidePanel(); renderPvw()"
-                        ></v-textarea-->
                     </v-col>
 
                     <v-col
@@ -89,15 +80,6 @@
                         cols="6"
                         id="mainPageEditor"
                     >
-                        <!--v-textarea
-                            outlined
-                            class="Mono"
-                            v-model="form.mainPage"
-                            color="purple darken-2"
-                            name="input-7-4 mainPage"
-                            label="Zone d'édition de la fiche"
-                            @input="expandMainPage(); renderPvw();"
-                        ></v-textarea-->
                     </v-col>
                     
                     <v-col
@@ -234,6 +216,7 @@ export default {
             dialog: false,
             sidePanelEditor: null,
             mainPageEditor: null,
+            isModified: false,
         };
     },
 
@@ -305,6 +288,7 @@ export default {
             });
 
             this.sidePanelEditor.getModel().onDidChangeContent(() => {
+                this.isModified = true;
                 this.form.sidePanel = this.sidePanelEditor.getModel().getValue();
                 this.renderPvw();
             });
@@ -321,6 +305,7 @@ export default {
             });
 
             this.mainPageEditor.getModel().onDidChangeContent(() => {
+                this.isModified = true;
                 this.form.mainPage = this.mainPageEditor.getModel().getValue();
                 this.renderPvw();
             });
@@ -347,6 +332,7 @@ export default {
     mounted: async function () {
         await this.loadMd();
         this.loadEditor();
+        window.onbeforeunload = () => this.isModified ? "Certaines modifications n'ont peut-être pas été sauvegardées, êtes-vous sûr.e de vouloir quitter la page ?" : undefined;
     },
     components: { EmbeddedPage, EmbeddedPanel, FileFormCard }
 }

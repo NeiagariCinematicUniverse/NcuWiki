@@ -241,11 +241,12 @@ export default {
 
         deletePage: function() {
             this.delete = true;
-            this.toDel = this.url;
+            this.toDel = this.title;
             let childrenAmt = document.getElementById("content").children.length;
             for (let i = 0; i < childrenAmt; i++) {
                 document.getElementById("content").firstChild.remove();
             }
+            //Redirection towards index page
             this.isIndex = true;
         }
     },
